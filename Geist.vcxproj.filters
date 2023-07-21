@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{e2eefc54-d0bb-4f1a-99f7-dccd9b1392ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\SoLoud">
+      <UniqueIdentifier>{3d933b46-77b2-4aef-9590-f2e7f823d10e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\tinyxml2">
+      <UniqueIdentifier>{127149d8-3ef5-490e-aef2-5d64a702e414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BaseUnits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GUIElements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\IO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MemoryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Primitives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RNG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StateMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TooltipSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\tinyxml2\tinyxml2.cpp">
+      <Filter>ThirdParty\tinyxml2</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_audiosource.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_bassboostfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_biquadresonantfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_bus.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_3d.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_basicops.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_faderops.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_filterops.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_getters.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_setters.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_voicegroup.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_core_voiceops.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_dcremovalfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_echofilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_fader.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_fft.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_fft_lut.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_fftfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_file.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_filter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_flangerfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_freeverbfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_lofifilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_misc.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_queue.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_robotizefilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\sfxr\soloud_sfxr.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\speech\soloud_speech.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\core\soloud_thread.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\wav\soloud_wav.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\filter\soloud_waveshaperfilter.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\wav\soloud_wavstream.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\backend\winmm\soloud_winmm.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\wav\stb_vorbis.c">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\speech\tts.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\speech\resonator.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\speech\darray.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\wav\dr_impl.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\soloud\src\audiosource\speech\klatt.cpp">
+      <Filter>ThirdParty\SoLoud</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\BaseUnits.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Display.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Font.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Globals.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Gui.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GUIElements.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IO.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Logging.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MemoryManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ParticleSystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Primitives.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RNG.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sound.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\State.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StateMachine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TooltipSystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

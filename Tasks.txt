@@ -1,0 +1,46 @@
+GUI
+
+The following GUI elements need to work:
+
+Text buttons
+Icon buttons (which can have text overlays)
+Radio Buttons
+Scroll bars
+Check boxes
+Text input
+Panels (both colored rectangles and textured)
+
+They should run in an immediate-gui fashion, saving their state from Update() and using it
+when Drawing().  And also when someone is polling.
+
+Each element should have a unique ID (NOT a pointer or a location in a list) that can 
+be used to find that element quickly.
+
+A GUI will be a collection of these elements, and will update and draw all the elements in
+it.  GUIs can be initialized programattically or from text files.  In theory, the best
+way to initialize a GUI would be from a file created by an editor instead of hand-edited
+(this is the reason we don't use our current GUI system).
+
+PARTICLES/ANIMATIONS
+
+The particle system should be flexible enough that it can also be used to do
+frame-by-frame animations.  Particles need to be easy to initialize and yet flexible
+enough to handle everything from smoke and fire to rotating "aura" textures beneath a
+unit.  This means that you need to be able to specify the plane of the particles
+(shouldn't be a problem with matrix rotation).
+
+BUT...just making a simple billboarded particle with a single colored texture should
+be very simple.  We may need to create several different constructors for the different
+types of particle animations we want.
+
+MESHES
+
+MAPS
+
+EDITORS
+
+SCRIPTING ENGINE
+
+XML PARSER
+
+
