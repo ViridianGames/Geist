@@ -53,54 +53,54 @@ class Gui;
 
 enum GuiElements
 {
-   //  Actual working elements
-   GUI_TEXTBUTTON = 0,
-   GUI_ICONBUTTON,
-   GUI_SCROLLBAR,
-   GUI_RADIOBUTTON,
-   GUI_CHECKBOX,
-   GUI_TEXTINPUT,
-   GUI_PANEL,
-   GUI_TEXTAREA,
-   GUI_SPRITE,
-   GUI_OCTAGONBOX,
-   GUI_STRETCHBUTTON,
+	//  Actual working elements
+	GUI_TEXTBUTTON = 0,
+	GUI_ICONBUTTON,
+	GUI_SCROLLBAR,
+	GUI_RADIOBUTTON,
+	GUI_CHECKBOX,
+	GUI_TEXTINPUT,
+	GUI_PANEL,
+	GUI_TEXTAREA,
+	GUI_SPRITE,
+	GUI_OCTAGONBOX,
+	GUI_STRETCHBUTTON,
 
-   GUI_LAST
+	GUI_LAST
 };
 
 
 class GuiElement : public Tween
 {
 public:
-   GuiElement(){};
-   virtual ~GuiElement(){};
+	GuiElement() {};
+	virtual ~GuiElement() {};
 
-   virtual void Init() {};
-   virtual void Update() = 0;
-   virtual void Draw() = 0;
+	virtual void Init() {};
+	virtual void Update() = 0;
+	virtual void Draw() = 0;
 
-   virtual int         GetValue()  = 0;
-   virtual std::string GetString() { return m_String; }
+	virtual int         GetValue() = 0;
+	virtual std::string GetString() { return m_String; }
 
-   int m_Type;
-   int m_ID;
-   int m_Active;
-   int m_Group;
-   int m_Visible;
-   int m_Width;
-   int m_Height;
-   Color m_Color = Color(1, 1, 1, 1);
+	int m_Type;
+	int m_ID;
+	int m_Active;
+	int m_Group;
+	int m_Visible;
+	int m_Width;
+	int m_Height;
+	Color m_Color = Color(1, 1, 1, 1);
 
-   bool m_Hovered = false;  //  The mouse is over this element but is not down.  Somne elements will draw differently in this state.
-   bool m_Hot = false;      //  The mouse is over this element and the left mouse button is down.  The element will draw "clicked".
-   bool m_Clicked = false;  //  The mouse is over this element and the left mouse button has JUST been released.  This is usually what you're looking for.  The element will draw normally since this is the end of the interaction.
-   bool m_Shadowed = false;
-   bool m_Selected = false;
+	bool m_Hovered = false;  //  The mouse is over this element but is not down.  Somne elements will draw differently in this state.
+	bool m_Hot = false;      //  The mouse is over this element and the left mouse button is down.  The element will draw "clicked".
+	bool m_Clicked = false;  //  The mouse is over this element and the left mouse button has JUST been released.  This is usually what you're looking for.  The element will draw normally since this is the end of the interaction.
+	bool m_Shadowed = false;
+	bool m_Selected = false;
 
-   std::string m_String;
+	std::string m_String;
 
-   Gui* m_Parent;
+	Gui* m_Parent;
 };
 
 
@@ -110,24 +110,24 @@ class GuiTextButton : public GuiElement
 {
 public:
 
-   GuiTextButton(Gui* parent ) { m_Parent = parent; m_Visible = true; };
+	GuiTextButton(Gui* parent) { m_Parent = parent; m_Visible = true; };
 
-   void Init(  int ID, int posx, int posy, int width, int height, std::string text, Font* font,
-      Color textcolor=Color(1.0f, 1.0f, 1.0f, 1.0f),
-      Color backgroundcolor=Color(0, 0, 0, 1),
-      Color bordercolor=Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true );
+	void Init(int ID, int posx, int posy, int width, int height, std::string text, Font* font,
+		Color textcolor = Color(1.0f, 1.0f, 1.0f, 1.0f),
+		Color backgroundcolor = Color(0, 0, 0, 1),
+		Color bordercolor = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true);
 
-   void Draw();
-   void Update();
-   int  GetValue();
+	void Draw();
+	void Update();
+	int  GetValue();
 
-   Font* m_Font;
+	Font* m_Font;
 
-   Color m_TextColor;
-   Color m_BackgroundColor;
-   Color m_BorderColor;
+	Color m_TextColor;
+	Color m_BackgroundColor;
+	Color m_BorderColor;
 
-   int m_TextWidth;
+	int m_TextWidth;
 };
 
 
@@ -139,25 +139,25 @@ class GuiIconButton : public GuiElement
 {
 public:
 
-   GuiIconButton(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	GuiIconButton(Gui* parent) { m_Parent = parent; m_Visible = true; };
 
-   void Init(  int ID, int posx, int posy, std::shared_ptr<Sprite> upbutton, std::shared_ptr<Sprite> downbutton = NULL,
-      std::shared_ptr<Sprite> inactivebutton = NULL, std::string text = "", Font* font = NULL,
-      Color fontcolor=(Color(255, 255, 255, 255)), int group = 0, int active = true );
-   
-   void Draw();
-   void Update();
-   int GetValue();
-   void SetBob(bool value) { m_Bobbing = value; }
+	void Init(int ID, int posx, int posy, std::shared_ptr<Sprite> upbutton, std::shared_ptr<Sprite> downbutton = NULL,
+		std::shared_ptr<Sprite> inactivebutton = NULL, std::string text = "", Font* font = NULL,
+		Color fontcolor = (Color(255, 255, 255, 255)), int group = 0, int active = true);
 
-   std::shared_ptr<Sprite> m_UpTexture;
-   std::shared_ptr<Sprite> m_DownTexture;
-   std::shared_ptr<Sprite> m_InactiveTexture;
+	void Draw();
+	void Update();
+	int GetValue();
+	void SetBob(bool value) { m_Bobbing = value; }
 
-   Font* m_Font;
-   Color m_FontColor;
+	std::shared_ptr<Sprite> m_UpTexture;
+	std::shared_ptr<Sprite> m_DownTexture;
+	std::shared_ptr<Sprite> m_InactiveTexture;
 
-   bool  m_Bobbing = false;
+	Font* m_Font;
+	Color m_FontColor;
+
+	bool  m_Bobbing = false;
 };
 
 //  The CheckBox uses two sprites to define whether the object is set
@@ -165,28 +165,28 @@ public:
 class GuiCheckBox : public GuiElement
 {
 public:
-   GuiCheckBox(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	GuiCheckBox(Gui* parent) { m_Parent = parent; m_Visible = true; };
 
-   void Init(int ID, int posx, int posy, std::shared_ptr<Sprite> selectSprite, std::shared_ptr<Sprite> deselectSprite, std::shared_ptr<Sprite> hoveredSprite = nullptr, std::shared_ptr<Sprite> hoveredselected = nullptr,
-      float scalex = 1.0f, float scaley = 1.0f,
-      Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true);
+	void Init(int ID, int posx, int posy, std::shared_ptr<Sprite> selectSprite, std::shared_ptr<Sprite> deselectSprite, std::shared_ptr<Sprite> hoveredSprite = nullptr, std::shared_ptr<Sprite> hoveredselected = nullptr,
+		float scalex = 1.0f, float scaley = 1.0f,
+		Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true);
 
-   void Init(int ID, int posx, int posy, int width, int height,
-      float scalex = 1.0f, float scaley = 1.0f,
-      Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true);
+	void Init(int ID, int posx, int posy, int width, int height,
+		float scalex = 1.0f, float scaley = 1.0f,
+		Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true);
 
-   void Draw();
-   void Update();
-   int  GetValue() { if (m_Active) return m_Selected; else return m_Active; }
+	void Draw();
+	void Update();
+	int  GetValue() { if (m_Active) return m_Selected; else return m_Active; }
 
-   bool m_Selected;
-   Color m_Color = Color(1, 1, 1, 1);
-   std::shared_ptr<Sprite> m_SelectSprite;
-   std::shared_ptr<Sprite> m_DeselectSprite;
-   std::shared_ptr<Sprite> m_HoveredSprite;
-   std::shared_ptr<Sprite> m_HoveredSelectedSprite;
-   float m_ScaleX = 1;
-   float m_ScaleY = 1;
+	bool m_Selected;
+	Color m_Color = Color(1, 1, 1, 1);
+	std::shared_ptr<Sprite> m_SelectSprite;
+	std::shared_ptr<Sprite> m_DeselectSprite;
+	std::shared_ptr<Sprite> m_HoveredSprite;
+	std::shared_ptr<Sprite> m_HoveredSelectedSprite;
+	float m_ScaleX = 1;
+	float m_ScaleY = 1;
 };
 
 //  The ScrollBar draws a spur at the appropriate location, either horizontally
@@ -196,41 +196,41 @@ public:
 class GuiScrollBar : public GuiElement
 {
 public:
-   GuiScrollBar(Gui* parent ) { m_Parent = parent; m_Visible = true; };
-   
-   void Init(int ID, int valuerange, int posx, int posy, int width, int height, bool vertical,
-      Color spurcolor = Color(.5f, .5f, 1.0f, 1.0f), Color backgroundcolor = Color(0, 0, 0, 0), int group = 0, int active = true, bool shadowed = false );
+	GuiScrollBar(Gui* parent) { m_Parent = parent; m_Visible = true; };
 
-   void Init(int ID, int valuerange, int posx, int posy, int width, int height, bool vertical,
-      std::shared_ptr<Sprite> activeLeft, std::shared_ptr<Sprite> activeRight, std::shared_ptr<Sprite> activeCenter, std::shared_ptr<Sprite> spurActive,
-      std::shared_ptr<Sprite> inactiveLeft = nullptr, std::shared_ptr<Sprite> inactiveRight = nullptr, std::shared_ptr<Sprite> inactiveCenter = nullptr,
-       std::shared_ptr<Sprite> spurInactive = nullptr, int group = 0, int active = true, bool shadowed = false);
+	void Init(int ID, int valuerange, int posx, int posy, int width, int height, bool vertical,
+		Color spurcolor = Color(.5f, .5f, 1.0f, 1.0f), Color backgroundcolor = Color(0, 0, 0, 0), int group = 0, int active = true, bool shadowed = false);
 
-   void Update();
-   void Draw();
-   int         GetValue();
-   std::string GetString();
+	void Init(int ID, int valuerange, int posx, int posy, int width, int height, bool vertical,
+		std::shared_ptr<Sprite> activeLeft, std::shared_ptr<Sprite> activeRight, std::shared_ptr<Sprite> activeCenter, std::shared_ptr<Sprite> spurActive,
+		std::shared_ptr<Sprite> inactiveLeft = nullptr, std::shared_ptr<Sprite> inactiveRight = nullptr, std::shared_ptr<Sprite> inactiveCenter = nullptr,
+		std::shared_ptr<Sprite> spurInactive = nullptr, int group = 0, int active = true, bool shadowed = false);
 
-   int m_Value;
-   int m_ValueRange;
-   bool m_Selected = false;
+	void Update();
+	void Draw();
+	int         GetValue();
+	std::string GetString();
 
-   int m_SpurLocation;
+	int m_Value;
+	int m_ValueRange;
+	bool m_Selected = false;
 
-   bool m_Vertical;
+	int m_SpurLocation;
 
-   Color m_SpurColor;
-   Color m_BackgroundColor;
+	bool m_Vertical;
 
-   std::shared_ptr<Sprite> m_ActiveLeft;
-   std::shared_ptr<Sprite> m_ActiveRight;
-   std::shared_ptr<Sprite> m_ActiveCenter;
-   std::shared_ptr<Sprite> m_SpurActive;
+	Color m_SpurColor;
+	Color m_BackgroundColor;
 
-   std::shared_ptr<Sprite> m_InactiveLeft;
-   std::shared_ptr<Sprite> m_InactiveRight;
-   std::shared_ptr<Sprite> m_InactiveCenter;
-   std::shared_ptr<Sprite> m_SpurInactive;
+	std::shared_ptr<Sprite> m_ActiveLeft;
+	std::shared_ptr<Sprite> m_ActiveRight;
+	std::shared_ptr<Sprite> m_ActiveCenter;
+	std::shared_ptr<Sprite> m_SpurActive;
+
+	std::shared_ptr<Sprite> m_InactiveLeft;
+	std::shared_ptr<Sprite> m_InactiveRight;
+	std::shared_ptr<Sprite> m_InactiveCenter;
+	std::shared_ptr<Sprite> m_SpurInactive;
 };
 
 
@@ -243,23 +243,23 @@ public:
 class GuiTextInput : public GuiElement
 {
 public:
-   GuiTextInput(Gui* parent ) { m_Parent = parent; m_Visible = true; };
-   void Init( int ID, int posx, int posy, int width, int height, Font* font,
-      std::string initialtext = "", Color textColor = Color(1, 1, 1, 1),
-      Color boxcolor=Color(1, 1, 1, 1), Color backgroundcolor=Color(0, 0, 0, 0),
-      int group = 0, int active = true );
+	GuiTextInput(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	void Init(int ID, int posx, int posy, int width, int height, Font* font,
+		std::string initialtext = "", Color textColor = Color(1, 1, 1, 1),
+		Color boxcolor = Color(1, 1, 1, 1), Color backgroundcolor = Color(0, 0, 0, 0),
+		int group = 0, int active = true);
 
-   void Update();
-   void Draw();
-   int         GetValue(){ return 0;}
-   
-   Font* m_Font;
+	void Update();
+	void Draw();
+	int         GetValue() { return 0; }
 
-   Color m_BoxColor;
-   Color m_BackgroundColor;
-   Color m_TextColor;
+	Font* m_Font;
 
-   int m_HasFocus;
+	Color m_BoxColor;
+	Color m_BackgroundColor;
+	Color m_TextColor;
+
+	int m_HasFocus;
 };
 
 
@@ -270,27 +270,27 @@ public:
 class GuiRadioButton : public GuiElement
 {
 public:
-   GuiRadioButton(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	GuiRadioButton(Gui* parent) { m_Parent = parent; m_Visible = true; };
 
-   void Init(int ID, int posx, int posy, std::shared_ptr<Sprite> selectSprite, std::shared_ptr<Sprite> deselectSprite, std::shared_ptr<Sprite> hoveredSprite = nullptr,
-      float scalex = 1.0f, float scaley = 1.0f,
-      Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true, bool shadowed = false);
+	void Init(int ID, int posx, int posy, std::shared_ptr<Sprite> selectSprite, std::shared_ptr<Sprite> deselectSprite, std::shared_ptr<Sprite> hoveredSprite = nullptr,
+		float scalex = 1.0f, float scaley = 1.0f,
+		Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true, bool shadowed = false);
 
-   void Init(int ID, int posx, int posy, int width, int height,
-      float scalex = 1.0f, float scaley = 1.0f,
-      Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true, bool shadowed = false);
+	void Init(int ID, int posx, int posy, int width, int height,
+		float scalex = 1.0f, float scaley = 1.0f,
+		Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int group = 0, int active = true, bool shadowed = false);
 
-   void Draw();
-   void Update();
-   int  GetValue() { if (m_Active) return m_Selected; else return m_Active; }
+	void Draw();
+	void Update();
+	int  GetValue() { if (m_Active) return m_Selected; else return m_Active; }
 
-   bool m_Selected;
-   Color m_Color = Color(1, 1, 1, 1);
-   std::shared_ptr<Sprite> m_SelectSprite;
-   std::shared_ptr<Sprite> m_DeselectSprite;
-   std::shared_ptr<Sprite> m_HoveredSprite;
-   float m_ScaleX = 1;
-   float m_ScaleY = 1;
+	bool m_Selected;
+	Color m_Color = Color(1, 1, 1, 1);
+	std::shared_ptr<Sprite> m_SelectSprite;
+	std::shared_ptr<Sprite> m_DeselectSprite;
+	std::shared_ptr<Sprite> m_HoveredSprite;
+	float m_ScaleX = 1;
+	float m_ScaleY = 1;
 };
 
 
@@ -301,17 +301,17 @@ public:
 class GuiPanel : public GuiElement
 {
 public:
-   GuiPanel(Gui* parent ) { m_Parent = parent; m_Visible = true; };
-   void Init(       int ID, int posx, int posy, int width, int height,
-      Color color=Color(1.0f, 1.0f, 1.0f, 1.0f), bool filled = false, 
-      int group = 0, int active = true );
-   void Update();
-   void Draw();
-   int  GetValue();
+	GuiPanel(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	void Init(int ID, int posx, int posy, int width, int height,
+		Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), bool filled = false,
+		int group = 0, int active = true);
+	void Update();
+	void Draw();
+	int  GetValue();
 
-   bool m_Filled;
+	bool m_Filled;
 
-   Color m_Color;
+	Color m_Color;
 };
 
 
@@ -319,45 +319,45 @@ public:
 class GuiTextArea : public GuiElement
 {
 public:
-   GuiTextArea(Gui* parent ) { m_Parent = parent; m_Visible = true; };
-   void Init(int ID, Font* font, std::string text, int posx, int posy, int width = 0, int height = 0,
-      Color color=Color(1.0f, 1.0f, 1.0f, 1.0f), int justified = GuiTextArea::LEFT, int group = 0, int active = true, bool shadowed = false );
+	GuiTextArea(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	void Init(int ID, Font* font, std::string text, int posx, int posy, int width = 0, int height = 0,
+		Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), int justified = GuiTextArea::LEFT, int group = 0, int active = true, bool shadowed = false);
 
-   void Draw();
-   void Update();
-   int  GetValue();
+	void Draw();
+	void Update();
+	int  GetValue();
 
-   Font* m_Font;
-   Color m_Color;
-   int   m_Justified;
+	Font* m_Font;
+	Color m_Color;
+	int   m_Justified;
 
-   enum Justification
-   {
-      LEFT = 0,
-      CENTERED,
-      RIGHT
-   };
+	enum Justification
+	{
+		LEFT = 0,
+		CENTERED,
+		RIGHT
+	};
 };
 
 //  Just puts an image at a certain location.  Non-interactive.
 class GuiSprite : public GuiElement
 {
 public:
-   GuiSprite(Gui* parent) { m_Parent = parent; m_Visible = true; };
-   void Init( int ID, int posx, int posy, std::shared_ptr<Sprite> sprite, float scalex = 1.0f, float scaley = 1.0f,
-      Color color = Color(1, 1, 1, 1), int group = 0, int active = true );
+	GuiSprite(Gui* parent) { m_Parent = parent; m_Visible = true; };
+	void Init(int ID, int posx, int posy, std::shared_ptr<Sprite> sprite, float scalex = 1.0f, float scaley = 1.0f,
+		Color color = Color(1, 1, 1, 1), int group = 0, int active = true);
 
-   void Draw();
-   void Update();
-   int GetValue() { return 0; }
-   void SetSprite(std::shared_ptr<Sprite> newSprite) { m_Sprite = newSprite; }
-   std::shared_ptr<Sprite> GetSprite() { return m_Sprite; }
+	void Draw();
+	void Update();
+	int GetValue() { return 0; }
+	void SetSprite(std::shared_ptr<Sprite> newSprite) { m_Sprite = newSprite; }
+	std::shared_ptr<Sprite> GetSprite() { return m_Sprite; }
 
-   Color m_Color = Color(1, 1, 1, 1);
-   std::shared_ptr<Sprite> m_Sprite;
+	Color m_Color = Color(1, 1, 1, 1);
+	std::shared_ptr<Sprite> m_Sprite;
 
-   float m_ScaleX = 1;
-   float m_ScaleY = 1;
+	float m_ScaleX = 1;
+	float m_ScaleY = 1;
 };
 
 //  An "octagon box" is a resizeable box made from eight border sprites and
@@ -381,16 +381,16 @@ public:
 class GuiOctagonBox : public GuiElement
 {
 public:
-   GuiOctagonBox(Gui* parent) { m_Parent = parent; m_Visible = true; m_Width = 0; m_Height = 0; }
-   void Init(int ID, int posx, int posy, int width, int height, std::vector<std::shared_ptr<Sprite> > borders,
-      Color color = Color(1, 1, 1, 1), int group = 0, int active = true);
+	GuiOctagonBox(Gui* parent) { m_Parent = parent; m_Visible = true; m_Width = 0; m_Height = 0; }
+	void Init(int ID, int posx, int posy, int width, int height, std::vector<std::shared_ptr<Sprite> > borders,
+		Color color = Color(1, 1, 1, 1), int group = 0, int active = true);
 
-   void Draw();
-   void Update();
-   int GetValue() { return 0; }
+	void Draw();
+	void Update();
+	int GetValue() { return 0; }
 
-   Color m_Color = Color(1, 1, 1, 1);
-   std::vector<std::shared_ptr<Sprite> > m_Sprites;
+	Color m_Color = Color(1, 1, 1, 1);
+	std::vector<std::shared_ptr<Sprite> > m_Sprites;
 };
 
 //  A "stretch button" is an icon button made up of three sprites - a left
@@ -400,25 +400,25 @@ public:
 class GuiStretchButton : public GuiElement
 {
 public:
-   GuiStretchButton(Gui* parent) { m_Parent = parent; m_Visible = true; m_Width = 0; m_Height = 0; }
-   void Init(int ID, int posx, int posy, int width, std::string label,
-      std::shared_ptr<Sprite> activeLeft, std::shared_ptr<Sprite> activeRight, std::shared_ptr<Sprite> activeCenter,
-      std::shared_ptr<Sprite> inactiveLeft, std::shared_ptr<Sprite> inactiveRight, std::shared_ptr<Sprite> inactiveCenter, int indent = 0,
-      Color color = Color(1, 1, 1, 1), int group = 0, int active = true, bool shadowed = false);
+	GuiStretchButton(Gui* parent) { m_Parent = parent; m_Visible = true; m_Width = 0; m_Height = 0; }
+	void Init(int ID, int posx, int posy, int width, std::string label,
+		std::shared_ptr<Sprite> activeLeft, std::shared_ptr<Sprite> activeRight, std::shared_ptr<Sprite> activeCenter,
+		std::shared_ptr<Sprite> inactiveLeft, std::shared_ptr<Sprite> inactiveRight, std::shared_ptr<Sprite> inactiveCenter, int indent = 0,
+		Color color = Color(1, 1, 1, 1), int group = 0, int active = true, bool shadowed = false);
 
-   void Draw();
-   void Update();
-   int GetValue() { return 0; }
+	void Draw();
+	void Update();
+	int GetValue() { return 0; }
 
-   Color m_Color = Color(1, 1, 1, 1);
-   std::shared_ptr<Sprite> m_ActiveLeft;
-   std::shared_ptr<Sprite> m_ActiveRight;
-   std::shared_ptr<Sprite> m_ActiveCenter;
-   std::shared_ptr<Sprite> m_InactiveLeft;
-   std::shared_ptr<Sprite> m_InactiveRight;
-   std::shared_ptr<Sprite> m_InactiveCenter;
+	Color m_Color = Color(1, 1, 1, 1);
+	std::shared_ptr<Sprite> m_ActiveLeft;
+	std::shared_ptr<Sprite> m_ActiveRight;
+	std::shared_ptr<Sprite> m_ActiveCenter;
+	std::shared_ptr<Sprite> m_InactiveLeft;
+	std::shared_ptr<Sprite> m_InactiveRight;
+	std::shared_ptr<Sprite> m_InactiveCenter;
 
-   int m_Indent = 0;
+	int m_Indent = 0;
 };
 
 #endif

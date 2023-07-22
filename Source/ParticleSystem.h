@@ -25,48 +25,48 @@
 class Particle2D
 {
 public:
-   Point m_Pos;
-   Point m_Speed;
-   float m_Scale = 1;
-   float m_Angle = 0;
-   float m_AngularVelocity = 0;
-   Color m_StartColor = Color(1, 1, 1, 1);
-   Color m_EndColor = Color(1, 1, 1, 1);
-   unsigned int m_Birth = 0;
-   unsigned int m_Age = 0;
-   unsigned int m_MaxAge = 1000;
-   bool m_IsDead = false;
-   bool m_Perturb;
-   int  m_Sprite;
+	Point m_Pos;
+	Point m_Speed;
+	float m_Scale = 1;
+	float m_Angle = 0;
+	float m_AngularVelocity = 0;
+	Color m_StartColor = Color(1, 1, 1, 1);
+	Color m_EndColor = Color(1, 1, 1, 1);
+	unsigned int m_Birth = 0;
+	unsigned int m_Age = 0;
+	unsigned int m_MaxAge = 1000;
+	bool m_IsDead = false;
+	bool m_Perturb;
+	int  m_Sprite;
 };
 
 class Emitter2D : public Unit2D
 {
 public:
-   Emitter2D() {};
-   virtual void Init() { Init(std::string("")); }
-   virtual void Init(const std::string& configfile);
-   void Shutdown();
-   void Update();
-   void Draw();
-   void Start(); //  Start this emitter emitting;
-   void Stop() { m_Started = false; } //  Stop the emitter.  It won't emit any more particles but particles already in existance will still be updated and drawn.
-   void AddSprite(std::shared_ptr<Sprite> sprite); // Adds a sprite to the list of sprites that can be used for this emitter. Adding a particle will choose a random sprite from the list.
-   void AddParticle(Particle2D particle);
-   void AddParticle(Point pos, Point vel, unsigned int maxage, Color startcolor = Color(1, 1, 1, 1),
-      Color endcolor = Color(1, 1, 1, 1), float rotation = 0, float scale = 1);
-   void SetTexture(Texture* texture) { m_Texture = texture; }
-   void SetColorMask(Color color) { m_ColorMask = color; }
-   Point                    m_DrawOffset; // Just in case our position doesn't match our screen coordinates.
-   std::vector<Particle2D>               m_Particles;
+	Emitter2D() {};
+	virtual void Init() { Init(std::string("")); }
+	virtual void Init(const std::string& configfile);
+	void Shutdown();
+	void Update();
+	void Draw();
+	void Start(); //  Start this emitter emitting;
+	void Stop() { m_Started = false; } //  Stop the emitter.  It won't emit any more particles but particles already in existance will still be updated and drawn.
+	void AddSprite(std::shared_ptr<Sprite> sprite); // Adds a sprite to the list of sprites that can be used for this emitter. Adding a particle will choose a random sprite from the list.
+	void AddParticle(Particle2D particle);
+	void AddParticle(Point pos, Point vel, unsigned int maxage, Color startcolor = Color(1, 1, 1, 1),
+		Color endcolor = Color(1, 1, 1, 1), float rotation = 0, float scale = 1);
+	void SetTexture(Texture* texture) { m_Texture = texture; }
+	void SetColorMask(Color color) { m_ColorMask = color; }
+	Point                    m_DrawOffset; // Just in case our position doesn't match our screen coordinates.
+	std::vector<Particle2D>               m_Particles;
 private:
-   std::vector<std::shared_ptr<Sprite> > m_Sprites;
-   Texture*              m_Texture; // The same texture will be used for all particles from this emitter.
+	std::vector<std::shared_ptr<Sprite> > m_Sprites;
+	Texture* m_Texture; // The same texture will be used for all particles from this emitter.
 
-   bool  m_Started;
-   bool  m_DieOnEmpty; // This emitter will be destroyed when all the particles in it have died.
-   RNG   m_RNG;
-   Color m_ColorMask = Color(1, 1, 1, 1);
+	bool  m_Started;
+	bool  m_DieOnEmpty; // This emitter will be destroyed when all the particles in it have died.
+	RNG   m_RNG;
+	Color m_ColorMask = Color(1, 1, 1, 1);
 };
 
 /*class Emitter3D : public Unit
@@ -79,8 +79,8 @@ public:
    void Update();
    void Draw();
    void AddParticle(glm::vec3 pos, glm::vec3 vel, glm::vec3 acc,
-      unsigned int maxage, Color startcolor = Color(1, 1, 1, 1),
-      Color endcolor = Color(1, 1, 1, 1), float rotation = 0, glm::vec3 scale = glm::vec3(1, 1, 1));
+	  unsigned int maxage, Color startcolor = Color(1, 1, 1, 1),
+	  Color endcolor = Color(1, 1, 1, 1), float rotation = 0, glm::vec3 scale = glm::vec3(1, 1, 1));
 
 private:
    std::vector<Particle3D> m_Particles;
@@ -117,17 +117,17 @@ enum PS_UPDATETYPES
 class ParticleSystem : public Object
 {
 public:
-   ParticleSystem() {};
-   void Init() { Init(std::string("")); }
-   void Init(const std::string& configfile);
-   void Shutdown();
-   void Update();
-   void Draw();
-   void AddEmitter(std::shared_ptr<Emitter2D> emitter);
-   std::vector<std::shared_ptr<Emitter2D> > m_Emitters;
-   void ClearEmitters() { m_Emitters.clear(); }
+	ParticleSystem() {};
+	void Init() { Init(std::string("")); }
+	void Init(const std::string& configfile);
+	void Shutdown();
+	void Update();
+	void Draw();
+	void AddEmitter(std::shared_ptr<Emitter2D> emitter);
+	std::vector<std::shared_ptr<Emitter2D> > m_Emitters;
+	void ClearEmitters() { m_Emitters.clear(); }
 
-   Point m_Pos;
+	Point m_Pos;
 };
 
 #endif

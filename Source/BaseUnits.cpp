@@ -8,7 +8,7 @@ using namespace std;
 //  Unit2D
 void Unit2D::Init(const string& configfile)
 {
-   m_UnitConfig.Load(configfile);
+	m_UnitConfig.Load(configfile);
 }
 
 void Unit2D::Update()
@@ -29,7 +29,7 @@ void Unit2D::Shutdown()
 //  Unit3D
 void Unit3D::Init(const string& configfile)
 {
-   m_UnitConfig.Load(configfile);
+	m_UnitConfig.Load(configfile);
 }
 
 void Unit3D::Update()

@@ -35,20 +35,20 @@
 class Object
 {
 public:
-   Object() { };
-   explicit Object(const std::string& file) { };
-   Object(const Object&) = default;             //  Default copy constructor
-   Object(Object&&) = default;                  //  Default move constructor
-   Object& operator=(const Object&) = default;  //  Default assignment operator
-   Object& operator=(Object&&) = default;       //  Default move operator
-   virtual ~Object() = default;                 //  Default destructor
+	Object() { };
+	explicit Object(const std::string& file) { };
+	Object(const Object&) = default;             //  Default copy constructor
+	Object(Object&&) = default;                  //  Default move constructor
+	Object& operator=(const Object&) = default;  //  Default assignment operator
+	Object& operator=(Object&&) = default;       //  Default move operator
+	virtual ~Object() = default;                 //  Default destructor
 
-   virtual void Init() { Init(std::string("")); }
-   virtual void Init(const std::string& data) = 0;
-   virtual void Update() = 0;
-   virtual void Draw() = 0;
+	virtual void Init() { Init(std::string("")); }
+	virtual void Init(const std::string& data) = 0;
+	virtual void Update() = 0;
+	virtual void Draw() = 0;
 
-   int m_ID = -1;
+	int m_ID = -1;
 };
 
 #endif

@@ -29,47 +29,47 @@ class Config;
 class Unit2D : public Object
 {
 public:
-   Unit2D() {};
+	Unit2D() {};
 
-   virtual void Init() { Init(std::string("")); }
-   virtual void Init(char* data) { Init(std::string(data)); }
-   virtual void Init(const std::string& configfile);
-   virtual void Shutdown();
-   virtual void Update();
-   virtual void Draw();
+	virtual void Init() { Init(std::string("")); }
+	virtual void Init(char* data) { Init(std::string(data)); }
+	virtual void Init(const std::string& configfile);
+	virtual void Shutdown();
+	virtual void Update();
+	virtual void Draw();
 
-   bool GetIsDead() { return m_IsDead; }
-   void SetIsDead(bool dead) { m_IsDead = dead; }
-   Point GetPos() { return m_Pos; }
-   void SetPos(Point newpos) { m_Pos = newpos; }
+	bool GetIsDead() { return m_IsDead; }
+	void SetIsDead(bool dead) { m_IsDead = dead; }
+	Point GetPos() { return m_Pos; }
+	void SetPos(Point newpos) { m_Pos = newpos; }
 
-   Point m_Pos;
-   bool m_IsDead = false;
+	Point m_Pos;
+	bool m_IsDead = false;
 
-   Config m_UnitConfig;
+	Config m_UnitConfig;
 };
 
 class Unit3D : public Object
 {
 public:
-   Unit3D() {};
+	Unit3D() {};
 
-   virtual void Init() { Init(std::string("")); }
-   virtual void Init(char* data) { Init(std::string(data)); }
-   virtual void Init(const std::string& configfile);
-   virtual void Shutdown();
-   virtual void Update();
-   virtual void Draw();
+	virtual void Init() { Init(std::string("")); }
+	virtual void Init(char* data) { Init(std::string(data)); }
+	virtual void Init(const std::string& configfile);
+	virtual void Shutdown();
+	virtual void Update();
+	virtual void Draw();
 
-   virtual bool GetIsDead() { return m_IsDead; }
-   virtual void SetIsDead(bool dead) { m_IsDead = dead; }
-   virtual Vec3 GetPos() { return m_Pos; }
-   virtual void SetPos(Vec3 newpos) { m_Pos = newpos; }
+	virtual bool GetIsDead() { return m_IsDead; }
+	virtual void SetIsDead(bool dead) { m_IsDead = dead; }
+	virtual Vec3 GetPos() { return m_Pos; }
+	virtual void SetPos(Vec3 newpos) { m_Pos = newpos; }
 
-   Vec3 m_Pos;
-   bool m_IsDead = false;
+	Vec3 m_Pos;
+	bool m_IsDead = false;
 
-   Config m_UnitConfig;
+	Config m_UnitConfig;
 };
 
 #endif

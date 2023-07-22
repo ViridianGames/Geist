@@ -15,12 +15,12 @@
 class MemoryManager : public Object
 {
 public:
-   MemoryManager() {};
+	MemoryManager() {};
 
-   virtual void Init(const std::string& configfile);
-   virtual void Shutdown();
-   virtual void Update();
-   virtual void Draw() {};
+	virtual void Init(const std::string& configfile);
+	virtual void Shutdown();
+	virtual void Update();
+	virtual void Draw() {};
 };
 
 #endif

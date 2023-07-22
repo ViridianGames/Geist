@@ -57,11 +57,11 @@ Mat4 Rotate(Mat4 mat, float angle, Vec3 up);
 Mat4 Scale(Mat4 mat, Vec3 scaler);
 
 int intersect_triangle(double orig[3], double dir[3],
-   double vert0[3], double vert1[3], double vert2[3],
-   double *t, double *u, double *v);
+	double vert0[3], double vert1[3], double vert2[3],
+	double* t, double* u, double* v);
 
-bool Pick(Vec3 _RayOrigin, Vec3 _RayDirection, Vec3 tri1, Vec3 tri2, Vec3 tri3, double &distance);
+bool Pick(Vec3 _RayOrigin, Vec3 _RayDirection, Vec3 tri1, Vec3 tri2, Vec3 tri3, double& distance);
 
-bool PickWithUV(Vec3 _RayOrigin, Vec3 _RayDirection, Vec3 tri1, Vec3 tri2, Vec3 tri3, double &distance, double &u, double &v);
+bool PickWithUV(Vec3 _RayOrigin, Vec3 _RayDirection, Vec3 tri1, Vec3 tri2, Vec3 tri3, double& distance, double& u, double& v);
 
 #endif
