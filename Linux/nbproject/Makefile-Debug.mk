@@ -35,65 +35,65 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/fcdaa271/BaseUnits.o \
-	${OBJECTDIR}/_ext/fcdaa271/Config.o \
-	${OBJECTDIR}/_ext/fcdaa271/Display.o \
-	${OBJECTDIR}/_ext/fcdaa271/Engine.o \
-	${OBJECTDIR}/_ext/fcdaa271/Font.o \
-	${OBJECTDIR}/_ext/fcdaa271/GUIElements.o \
-	${OBJECTDIR}/_ext/fcdaa271/Globals.o \
-	${OBJECTDIR}/_ext/fcdaa271/Gui.o \
-	${OBJECTDIR}/_ext/fcdaa271/IO.o \
-	${OBJECTDIR}/_ext/fcdaa271/Input.o \
-	${OBJECTDIR}/_ext/fcdaa271/Logging.o \
-	${OBJECTDIR}/_ext/fcdaa271/MemoryManager.o \
-	${OBJECTDIR}/_ext/fcdaa271/ParticleSystem.o \
-	${OBJECTDIR}/_ext/fcdaa271/Primitives.o \
-	${OBJECTDIR}/_ext/fcdaa271/RNG.o \
-	${OBJECTDIR}/_ext/fcdaa271/ResourceManager.o \
-	${OBJECTDIR}/_ext/fcdaa271/Sound.o \
-	${OBJECTDIR}/_ext/fcdaa271/StateMachine.o \
-	${OBJECTDIR}/_ext/fcdaa271/SteamManager.o \
-	${OBJECTDIR}/_ext/fcdaa271/TooltipSystem.o \
-	${OBJECTDIR}/_ext/f4c466b2/soloud_sfxr.o \
-	${OBJECTDIR}/_ext/d5c9a5c7/darray.o \
-	${OBJECTDIR}/_ext/d5c9a5c7/klatt.o \
-	${OBJECTDIR}/_ext/d5c9a5c7/resonator.o \
-	${OBJECTDIR}/_ext/d5c9a5c7/soloud_speech.o \
-	${OBJECTDIR}/_ext/d5c9a5c7/tts.o \
-	${OBJECTDIR}/_ext/49f5e027/dr_impl.o \
-	${OBJECTDIR}/_ext/49f5e027/soloud_wav.o \
-	${OBJECTDIR}/_ext/49f5e027/soloud_wavstream.o \
-	${OBJECTDIR}/_ext/49f5e027/stb_vorbis.o \
-	${OBJECTDIR}/_ext/34b27db4/soloud_sdl2_static.o \
-	${OBJECTDIR}/_ext/2955b066/soloud.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_audiosource.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_bus.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_3d.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_basicops.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_faderops.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_filterops.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_getters.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_setters.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_voicegroup.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_core_voiceops.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_fader.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_fft.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_fft_lut.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_file.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_filter.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_queue.o \
-	${OBJECTDIR}/_ext/2955b066/soloud_thread.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_bassboostfilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_biquadresonantfilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_dcremovalfilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_echofilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_fftfilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_flangerfilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_lofifilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_robotizefilter.o \
-	${OBJECTDIR}/_ext/2f72b67f/soloud_waveshaperfilter.o \
-	${OBJECTDIR}/_ext/d7af6fe0/tinyxml2.o
+	${OBJECTDIR}/_ext/98fc376a/BaseUnits.o \
+	${OBJECTDIR}/_ext/98fc376a/Config.o \
+	${OBJECTDIR}/_ext/98fc376a/Display.o \
+	${OBJECTDIR}/_ext/98fc376a/Engine.o \
+	${OBJECTDIR}/_ext/98fc376a/Font.o \
+	${OBJECTDIR}/_ext/98fc376a/GUIElements.o \
+	${OBJECTDIR}/_ext/98fc376a/Globals.o \
+	${OBJECTDIR}/_ext/98fc376a/Gui.o \
+	${OBJECTDIR}/_ext/98fc376a/IO.o \
+	${OBJECTDIR}/_ext/98fc376a/Input.o \
+	${OBJECTDIR}/_ext/98fc376a/Logging.o \
+	${OBJECTDIR}/_ext/98fc376a/MemoryManager.o \
+	${OBJECTDIR}/_ext/98fc376a/ParticleSystem.o \
+	${OBJECTDIR}/_ext/98fc376a/Primitives.o \
+	${OBJECTDIR}/_ext/98fc376a/RNG.o \
+	${OBJECTDIR}/_ext/98fc376a/ResourceManager.o \
+	${OBJECTDIR}/_ext/98fc376a/Sound.o \
+	${OBJECTDIR}/_ext/98fc376a/StateMachine.o \
+	${OBJECTDIR}/_ext/98fc376a/TooltipSystem.o \
+	${OBJECTDIR}/_ext/1a597bf6/soloud_sfxr.o \
+	${OBJECTDIR}/_ext/ea6e7a0b/darray.o \
+	${OBJECTDIR}/_ext/ea6e7a0b/klatt.o \
+	${OBJECTDIR}/_ext/ea6e7a0b/resonator.o \
+	${OBJECTDIR}/_ext/ea6e7a0b/soloud_speech.o \
+	${OBJECTDIR}/_ext/ea6e7a0b/tts.o \
+	${OBJECTDIR}/_ext/b6871263/dr_impl.o \
+	${OBJECTDIR}/_ext/b6871263/soloud_wav.o \
+	${OBJECTDIR}/_ext/b6871263/soloud_wavstream.o \
+	${OBJECTDIR}/_ext/b6871263/stb_vorbis.o \
+	${OBJECTDIR}/_ext/b4a831f0/soloud_sdl2_static.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_audiosource.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_bus.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_3d.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_basicops.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_faderops.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_filterops.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_getters.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_setters.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_voicegroup.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_core_voiceops.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_fader.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_fft.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_fft_lut.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_file.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_filter.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_misc.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_queue.o \
+	${OBJECTDIR}/_ext/380d8baa/soloud_thread.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_bassboostfilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_biquadresonantfilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_dcremovalfilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_echofilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_fftfilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_flangerfilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_freeverbfilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_lofifilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_robotizefilter.o \
+	${OBJECTDIR}/_ext/6fa0d0c3/soloud_waveshaperfilter.o
 
 
 # C Compiler Flags
@@ -114,308 +114,308 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a
-	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a ${OBJECTFILES} 
-	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a
+	${AR} -rv ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a ${OBJECTFILES} 
+	$(RANLIB) ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a
 
-${OBJECTDIR}/_ext/fcdaa271/BaseUnits.o: ../../../Libraries/Framework/Source/BaseUnits.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/BaseUnits.o: ../Source/BaseUnits.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/BaseUnits.o ../../../Libraries/Framework/Source/BaseUnits.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/BaseUnits.o ../Source/BaseUnits.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Config.o: ../../../Libraries/Framework/Source/Config.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Config.o: ../Source/Config.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Config.o ../../../Libraries/Framework/Source/Config.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Config.o ../Source/Config.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Display.o: ../../../Libraries/Framework/Source/Display.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Display.o: ../Source/Display.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Display.o ../../../Libraries/Framework/Source/Display.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Display.o ../Source/Display.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Engine.o: ../../../Libraries/Framework/Source/Engine.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Engine.o: ../Source/Engine.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Engine.o ../../../Libraries/Framework/Source/Engine.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Engine.o ../Source/Engine.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Font.o: ../../../Libraries/Framework/Source/Font.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Font.o: ../Source/Font.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Font.o ../../../Libraries/Framework/Source/Font.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Font.o ../Source/Font.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/GUIElements.o: ../../../Libraries/Framework/Source/GUIElements.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/GUIElements.o: ../Source/GUIElements.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/GUIElements.o ../../../Libraries/Framework/Source/GUIElements.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/GUIElements.o ../Source/GUIElements.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Globals.o: ../../../Libraries/Framework/Source/Globals.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Globals.o: ../Source/Globals.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Globals.o ../../../Libraries/Framework/Source/Globals.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Globals.o ../Source/Globals.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Gui.o: ../../../Libraries/Framework/Source/Gui.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Gui.o: ../Source/Gui.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Gui.o ../../../Libraries/Framework/Source/Gui.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Gui.o ../Source/Gui.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/IO.o: ../../../Libraries/Framework/Source/IO.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/IO.o: ../Source/IO.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/IO.o ../../../Libraries/Framework/Source/IO.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/IO.o ../Source/IO.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Input.o: ../../../Libraries/Framework/Source/Input.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Input.o: ../Source/Input.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Input.o ../../../Libraries/Framework/Source/Input.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Input.o ../Source/Input.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Logging.o: ../../../Libraries/Framework/Source/Logging.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Logging.o: ../Source/Logging.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Logging.o ../../../Libraries/Framework/Source/Logging.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Logging.o ../Source/Logging.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/MemoryManager.o: ../../../Libraries/Framework/Source/MemoryManager.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/MemoryManager.o: ../Source/MemoryManager.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/MemoryManager.o ../../../Libraries/Framework/Source/MemoryManager.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/MemoryManager.o ../Source/MemoryManager.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/ParticleSystem.o: ../../../Libraries/Framework/Source/ParticleSystem.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/ParticleSystem.o: ../Source/ParticleSystem.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/ParticleSystem.o ../../../Libraries/Framework/Source/ParticleSystem.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/ParticleSystem.o ../Source/ParticleSystem.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Primitives.o: ../../../Libraries/Framework/Source/Primitives.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Primitives.o: ../Source/Primitives.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Primitives.o ../../../Libraries/Framework/Source/Primitives.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Primitives.o ../Source/Primitives.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/RNG.o: ../../../Libraries/Framework/Source/RNG.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/RNG.o: ../Source/RNG.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/RNG.o ../../../Libraries/Framework/Source/RNG.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/RNG.o ../Source/RNG.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/ResourceManager.o: ../../../Libraries/Framework/Source/ResourceManager.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/ResourceManager.o: ../Source/ResourceManager.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/ResourceManager.o ../../../Libraries/Framework/Source/ResourceManager.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/ResourceManager.o ../Source/ResourceManager.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/Sound.o: ../../../Libraries/Framework/Source/Sound.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/Sound.o: ../Source/Sound.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/Sound.o ../../../Libraries/Framework/Source/Sound.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/Sound.o ../Source/Sound.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/StateMachine.o: ../../../Libraries/Framework/Source/StateMachine.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/StateMachine.o: ../Source/StateMachine.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/StateMachine.o ../../../Libraries/Framework/Source/StateMachine.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/StateMachine.o ../Source/StateMachine.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/SteamManager.o: ../../../Libraries/Framework/Source/SteamManager.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/98fc376a/TooltipSystem.o: ../Source/TooltipSystem.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/98fc376a
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/SteamManager.o ../../../Libraries/Framework/Source/SteamManager.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/98fc376a/TooltipSystem.o ../Source/TooltipSystem.cpp
 
-${OBJECTDIR}/_ext/fcdaa271/TooltipSystem.o: ../../../Libraries/Framework/Source/TooltipSystem.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/fcdaa271
+${OBJECTDIR}/_ext/1a597bf6/soloud_sfxr.o: ../ThirdParty/soloud/src/audiosource/sfxr/soloud_sfxr.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/1a597bf6
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/fcdaa271/TooltipSystem.o ../../../Libraries/Framework/Source/TooltipSystem.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1a597bf6/soloud_sfxr.o ../ThirdParty/soloud/src/audiosource/sfxr/soloud_sfxr.cpp
 
-${OBJECTDIR}/_ext/f4c466b2/soloud_sfxr.o: ../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/f4c466b2
+${OBJECTDIR}/_ext/ea6e7a0b/darray.o: ../ThirdParty/soloud/src/audiosource/speech/darray.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/ea6e7a0b
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/f4c466b2/soloud_sfxr.o ../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ea6e7a0b/darray.o ../ThirdParty/soloud/src/audiosource/speech/darray.cpp
 
-${OBJECTDIR}/_ext/d5c9a5c7/darray.o: ../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/d5c9a5c7
+${OBJECTDIR}/_ext/ea6e7a0b/klatt.o: ../ThirdParty/soloud/src/audiosource/speech/klatt.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/ea6e7a0b
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/d5c9a5c7/darray.o ../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ea6e7a0b/klatt.o ../ThirdParty/soloud/src/audiosource/speech/klatt.cpp
 
-${OBJECTDIR}/_ext/d5c9a5c7/klatt.o: ../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/d5c9a5c7
+${OBJECTDIR}/_ext/ea6e7a0b/resonator.o: ../ThirdParty/soloud/src/audiosource/speech/resonator.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/ea6e7a0b
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/d5c9a5c7/klatt.o ../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ea6e7a0b/resonator.o ../ThirdParty/soloud/src/audiosource/speech/resonator.cpp
 
-${OBJECTDIR}/_ext/d5c9a5c7/resonator.o: ../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/d5c9a5c7
+${OBJECTDIR}/_ext/ea6e7a0b/soloud_speech.o: ../ThirdParty/soloud/src/audiosource/speech/soloud_speech.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/ea6e7a0b
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/d5c9a5c7/resonator.o ../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ea6e7a0b/soloud_speech.o ../ThirdParty/soloud/src/audiosource/speech/soloud_speech.cpp
 
-${OBJECTDIR}/_ext/d5c9a5c7/soloud_speech.o: ../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/d5c9a5c7
+${OBJECTDIR}/_ext/ea6e7a0b/tts.o: ../ThirdParty/soloud/src/audiosource/speech/tts.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/ea6e7a0b
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/d5c9a5c7/soloud_speech.o ../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/ea6e7a0b/tts.o ../ThirdParty/soloud/src/audiosource/speech/tts.cpp
 
-${OBJECTDIR}/_ext/d5c9a5c7/tts.o: ../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/d5c9a5c7
+${OBJECTDIR}/_ext/b6871263/dr_impl.o: ../ThirdParty/soloud/src/audiosource/wav/dr_impl.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/b6871263
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/d5c9a5c7/tts.o ../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/b6871263/dr_impl.o ../ThirdParty/soloud/src/audiosource/wav/dr_impl.cpp
 
-${OBJECTDIR}/_ext/49f5e027/dr_impl.o: ../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/49f5e027
+${OBJECTDIR}/_ext/b6871263/soloud_wav.o: ../ThirdParty/soloud/src/audiosource/wav/soloud_wav.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/b6871263
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/49f5e027/dr_impl.o ../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/b6871263/soloud_wav.o ../ThirdParty/soloud/src/audiosource/wav/soloud_wav.cpp
 
-${OBJECTDIR}/_ext/49f5e027/soloud_wav.o: ../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/49f5e027
+${OBJECTDIR}/_ext/b6871263/soloud_wavstream.o: ../ThirdParty/soloud/src/audiosource/wav/soloud_wavstream.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/b6871263
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/49f5e027/soloud_wav.o ../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/b6871263/soloud_wavstream.o ../ThirdParty/soloud/src/audiosource/wav/soloud_wavstream.cpp
 
-${OBJECTDIR}/_ext/49f5e027/soloud_wavstream.o: ../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/49f5e027
+${OBJECTDIR}/_ext/b6871263/stb_vorbis.o: ../ThirdParty/soloud/src/audiosource/wav/stb_vorbis.c
+	${MKDIR} -p ${OBJECTDIR}/_ext/b6871263
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/49f5e027/soloud_wavstream.o ../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp
+	$(COMPILE.c) -g -DWITH_SDL2_STATIC -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/b6871263/stb_vorbis.o ../ThirdParty/soloud/src/audiosource/wav/stb_vorbis.c
 
-${OBJECTDIR}/_ext/49f5e027/stb_vorbis.o: ../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c
-	${MKDIR} -p ${OBJECTDIR}/_ext/49f5e027
+${OBJECTDIR}/_ext/b4a831f0/soloud_sdl2_static.o: ../ThirdParty/soloud/src/backend/sdl2_static/soloud_sdl2_static.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/b4a831f0
 	${RM} "$@.d"
-	$(COMPILE.c) -g -DWITH_SDL2_STATIC -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/49f5e027/stb_vorbis.o ../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/b4a831f0/soloud_sdl2_static.o ../ThirdParty/soloud/src/backend/sdl2_static/soloud_sdl2_static.cpp
 
-${OBJECTDIR}/_ext/34b27db4/soloud_sdl2_static.o: ../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/34b27db4
+${OBJECTDIR}/_ext/380d8baa/soloud.o: ../ThirdParty/soloud/src/core/soloud.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/34b27db4/soloud_sdl2_static.o ../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud.o ../ThirdParty/soloud/src/core/soloud.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud.o: ../../../Libraries/SoLoud/src/core/soloud.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_audiosource.o: ../ThirdParty/soloud/src/core/soloud_audiosource.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud.o ../../../Libraries/SoLoud/src/core/soloud.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_audiosource.o ../ThirdParty/soloud/src/core/soloud_audiosource.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_audiosource.o: ../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_bus.o: ../ThirdParty/soloud/src/core/soloud_bus.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_audiosource.o ../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_bus.o ../ThirdParty/soloud/src/core/soloud_bus.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_bus.o: ../../../Libraries/SoLoud/src/core/soloud_bus.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_3d.o: ../ThirdParty/soloud/src/core/soloud_core_3d.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_bus.o ../../../Libraries/SoLoud/src/core/soloud_bus.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_3d.o ../ThirdParty/soloud/src/core/soloud_core_3d.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_3d.o: ../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_basicops.o: ../ThirdParty/soloud/src/core/soloud_core_basicops.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_3d.o ../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_basicops.o ../ThirdParty/soloud/src/core/soloud_core_basicops.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_basicops.o: ../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_faderops.o: ../ThirdParty/soloud/src/core/soloud_core_faderops.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_basicops.o ../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_faderops.o ../ThirdParty/soloud/src/core/soloud_core_faderops.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_faderops.o: ../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_filterops.o: ../ThirdParty/soloud/src/core/soloud_core_filterops.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_faderops.o ../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_filterops.o ../ThirdParty/soloud/src/core/soloud_core_filterops.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_filterops.o: ../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_getters.o: ../ThirdParty/soloud/src/core/soloud_core_getters.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_filterops.o ../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_getters.o ../ThirdParty/soloud/src/core/soloud_core_getters.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_getters.o: ../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_setters.o: ../ThirdParty/soloud/src/core/soloud_core_setters.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_getters.o ../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_setters.o ../ThirdParty/soloud/src/core/soloud_core_setters.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_setters.o: ../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_voicegroup.o: ../ThirdParty/soloud/src/core/soloud_core_voicegroup.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_setters.o ../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_voicegroup.o ../ThirdParty/soloud/src/core/soloud_core_voicegroup.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_voicegroup.o: ../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_core_voiceops.o: ../ThirdParty/soloud/src/core/soloud_core_voiceops.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_voicegroup.o ../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_core_voiceops.o ../ThirdParty/soloud/src/core/soloud_core_voiceops.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_core_voiceops.o: ../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_fader.o: ../ThirdParty/soloud/src/core/soloud_fader.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_core_voiceops.o ../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_fader.o ../ThirdParty/soloud/src/core/soloud_fader.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_fader.o: ../../../Libraries/SoLoud/src/core/soloud_fader.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_fft.o: ../ThirdParty/soloud/src/core/soloud_fft.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_fader.o ../../../Libraries/SoLoud/src/core/soloud_fader.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_fft.o ../ThirdParty/soloud/src/core/soloud_fft.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_fft.o: ../../../Libraries/SoLoud/src/core/soloud_fft.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_fft_lut.o: ../ThirdParty/soloud/src/core/soloud_fft_lut.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_fft.o ../../../Libraries/SoLoud/src/core/soloud_fft.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_fft_lut.o ../ThirdParty/soloud/src/core/soloud_fft_lut.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_fft_lut.o: ../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_file.o: ../ThirdParty/soloud/src/core/soloud_file.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_fft_lut.o ../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_file.o ../ThirdParty/soloud/src/core/soloud_file.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_file.o: ../../../Libraries/SoLoud/src/core/soloud_file.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_filter.o: ../ThirdParty/soloud/src/core/soloud_filter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_file.o ../../../Libraries/SoLoud/src/core/soloud_file.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_filter.o ../ThirdParty/soloud/src/core/soloud_filter.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_filter.o: ../../../Libraries/SoLoud/src/core/soloud_filter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_misc.o: ../ThirdParty/soloud/src/core/soloud_misc.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_filter.o ../../../Libraries/SoLoud/src/core/soloud_filter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_misc.o ../ThirdParty/soloud/src/core/soloud_misc.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_queue.o: ../../../Libraries/SoLoud/src/core/soloud_queue.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_queue.o: ../ThirdParty/soloud/src/core/soloud_queue.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_queue.o ../../../Libraries/SoLoud/src/core/soloud_queue.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_queue.o ../ThirdParty/soloud/src/core/soloud_queue.cpp
 
-${OBJECTDIR}/_ext/2955b066/soloud_thread.o: ../../../Libraries/SoLoud/src/core/soloud_thread.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2955b066
+${OBJECTDIR}/_ext/380d8baa/soloud_thread.o: ../ThirdParty/soloud/src/core/soloud_thread.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/380d8baa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2955b066/soloud_thread.o ../../../Libraries/SoLoud/src/core/soloud_thread.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/380d8baa/soloud_thread.o ../ThirdParty/soloud/src/core/soloud_thread.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_bassboostfilter.o: ../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_bassboostfilter.o: ../ThirdParty/soloud/src/filter/soloud_bassboostfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_bassboostfilter.o ../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_bassboostfilter.o ../ThirdParty/soloud/src/filter/soloud_bassboostfilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_biquadresonantfilter.o: ../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_biquadresonantfilter.o: ../ThirdParty/soloud/src/filter/soloud_biquadresonantfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_biquadresonantfilter.o ../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_biquadresonantfilter.o ../ThirdParty/soloud/src/filter/soloud_biquadresonantfilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_dcremovalfilter.o: ../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_dcremovalfilter.o: ../ThirdParty/soloud/src/filter/soloud_dcremovalfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_dcremovalfilter.o ../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_dcremovalfilter.o ../ThirdParty/soloud/src/filter/soloud_dcremovalfilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_echofilter.o: ../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_echofilter.o: ../ThirdParty/soloud/src/filter/soloud_echofilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_echofilter.o ../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_echofilter.o ../ThirdParty/soloud/src/filter/soloud_echofilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_fftfilter.o: ../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_fftfilter.o: ../ThirdParty/soloud/src/filter/soloud_fftfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_fftfilter.o ../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_fftfilter.o ../ThirdParty/soloud/src/filter/soloud_fftfilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_flangerfilter.o: ../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_flangerfilter.o: ../ThirdParty/soloud/src/filter/soloud_flangerfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_flangerfilter.o ../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_flangerfilter.o ../ThirdParty/soloud/src/filter/soloud_flangerfilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_lofifilter.o: ../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_freeverbfilter.o: ../ThirdParty/soloud/src/filter/soloud_freeverbfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_lofifilter.o ../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_freeverbfilter.o ../ThirdParty/soloud/src/filter/soloud_freeverbfilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_robotizefilter.o: ../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_lofifilter.o: ../ThirdParty/soloud/src/filter/soloud_lofifilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_robotizefilter.o ../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_lofifilter.o ../ThirdParty/soloud/src/filter/soloud_lofifilter.cpp
 
-${OBJECTDIR}/_ext/2f72b67f/soloud_waveshaperfilter.o: ../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/2f72b67f
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_robotizefilter.o: ../ThirdParty/soloud/src/filter/soloud_robotizefilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/2f72b67f/soloud_waveshaperfilter.o ../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_robotizefilter.o ../ThirdParty/soloud/src/filter/soloud_robotizefilter.cpp
 
-${OBJECTDIR}/_ext/d7af6fe0/tinyxml2.o: ../../../Libraries/tinyxml2/tinyxml2.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/d7af6fe0
+${OBJECTDIR}/_ext/6fa0d0c3/soloud_waveshaperfilter.o: ../ThirdParty/soloud/src/filter/soloud_waveshaperfilter.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/6fa0d0c3
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I../../glm -I../../glew/include -I../../stb_truetype -I../../tinyxml2 -I../../steamworks/sdk/public/steam -I../../SoLoud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/d7af6fe0/tinyxml2.o ../../../Libraries/tinyxml2/tinyxml2.cpp
+	$(COMPILE.cc) -g -DWITH_SDL2_STATIC -D_DEBUG -I/usr/include/SDL2 -I/usr/include/glm -I/usr/include/GL -I/usr/include/stb -I/usr/include/tinyxml2 -I../ThirdParty/soloud/include -I../Source -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/6fa0d0c3/soloud_waveshaperfilter.o ../ThirdParty/soloud/src/filter/soloud_waveshaperfilter.cpp
 
 # Subprojects
 .build-subprojects:

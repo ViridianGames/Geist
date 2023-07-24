@@ -5,117 +5,112 @@
                    displayName="Resource Files"
                    projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
-      <logicalFolder name="f1" displayName="Framework" projectFiles="true">
-        <itemPath>../../../Libraries/Framework/Source/BaseUnits.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/BaseUnits.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Config.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Config.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Display.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Display.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Engine.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Engine.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Font.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Font.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/GUIElements.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/GUIElements.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Globals.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Globals.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Gui.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Gui.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/IO.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/IO.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Input.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Input.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Logging.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Logging.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/MemoryManager.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/MemoryManager.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Object.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/ParticleSystem.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/ParticleSystem.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Primitives.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Primitives.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/RNG.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/RNG.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/ResourceManager.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/ResourceManager.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Sound.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/Sound.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/State.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/StateMachine.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/StateMachine.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/SteamManager.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/SteamManager.h</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/TooltipSystem.cpp</itemPath>
-        <itemPath>../../../Libraries/Framework/Source/TooltipSystem.h</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f2" displayName="soloud" projectFiles="true">
-        <logicalFolder name="audiosource" displayName="audiosource" projectFiles="true">
-          <logicalFolder name="sfxr" displayName="sfxr" projectFiles="true">
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp</itemPath>
+    <logicalFolder name="SourceFiles" displayName="Source" projectFiles="true">
+      <itemPath>../Source/BaseUnits.cpp</itemPath>
+      <itemPath>../Source/BaseUnits.h</itemPath>
+      <itemPath>../Source/Config.cpp</itemPath>
+      <itemPath>../Source/Config.h</itemPath>
+      <itemPath>../Source/Display.cpp</itemPath>
+      <itemPath>../Source/Display.h</itemPath>
+      <itemPath>../Source/Engine.cpp</itemPath>
+      <itemPath>../Source/Engine.h</itemPath>
+      <itemPath>../Source/Font.cpp</itemPath>
+      <itemPath>../Source/Font.h</itemPath>
+      <itemPath>../Source/GUIElements.cpp</itemPath>
+      <itemPath>../Source/GUIElements.h</itemPath>
+      <itemPath>../Source/Globals.cpp</itemPath>
+      <itemPath>../Source/Globals.h</itemPath>
+      <itemPath>../Source/Gui.cpp</itemPath>
+      <itemPath>../Source/Gui.h</itemPath>
+      <itemPath>../Source/IO.cpp</itemPath>
+      <itemPath>../Source/IO.h</itemPath>
+      <itemPath>../Source/Input.cpp</itemPath>
+      <itemPath>../Source/Input.h</itemPath>
+      <itemPath>../Source/Logging.cpp</itemPath>
+      <itemPath>../Source/Logging.h</itemPath>
+      <itemPath>../Source/MemoryManager.cpp</itemPath>
+      <itemPath>../Source/MemoryManager.h</itemPath>
+      <itemPath>../Source/Object.h</itemPath>
+      <itemPath>../Source/ParticleSystem.cpp</itemPath>
+      <itemPath>../Source/ParticleSystem.h</itemPath>
+      <itemPath>../Source/Primitives.cpp</itemPath>
+      <itemPath>../Source/Primitives.h</itemPath>
+      <itemPath>../Source/RNG.cpp</itemPath>
+      <itemPath>../Source/RNG.h</itemPath>
+      <itemPath>../Source/ResourceManager.cpp</itemPath>
+      <itemPath>../Source/ResourceManager.h</itemPath>
+      <itemPath>../Source/Sound.cpp</itemPath>
+      <itemPath>../Source/Sound.h</itemPath>
+      <itemPath>../Source/State.h</itemPath>
+      <itemPath>../Source/StateMachine.cpp</itemPath>
+      <itemPath>../Source/StateMachine.h</itemPath>
+      <itemPath>../Source/TooltipSystem.cpp</itemPath>
+      <itemPath>../Source/TooltipSystem.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="f1"
+                   displayName="ThirdParty"
+                   projectFiles="true"
+                   kind="ROOT">
+      <logicalFolder name="f1" displayName="SoLoud" projectFiles="true" kind="ROOT">
+        <logicalFolder name="f2"
+                       displayName="audiosource"
+                       projectFiles="true"
+                       kind="ROOT">
+          <logicalFolder name="f1" displayName="sfxr" projectFiles="true" kind="ROOT">
+            <itemPath>../ThirdParty/soloud/src/audiosource/sfxr/soloud_sfxr.cpp</itemPath>
           </logicalFolder>
-          <logicalFolder name="speech" displayName="speech" projectFiles="true">
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp</itemPath>
+          <logicalFolder name="f2" displayName="speech" projectFiles="true" kind="ROOT">
+            <itemPath>../ThirdParty/soloud/src/audiosource/speech/darray.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/speech/klatt.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/speech/resonator.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/speech/soloud_speech.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/speech/tts.cpp</itemPath>
           </logicalFolder>
-          <logicalFolder name="wav" displayName="wav" projectFiles="true">
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp</itemPath>
-            <itemPath>../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c</itemPath>
-          </logicalFolder>
-        </logicalFolder>
-        <logicalFolder name="backend" displayName="backend" projectFiles="true">
-          <logicalFolder name="sdl" displayName="sdl" projectFiles="true">
-            <itemPath>../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp</itemPath>
+          <logicalFolder name="f3" displayName="wav" projectFiles="true" kind="ROOT">
+            <itemPath>../ThirdParty/soloud/src/audiosource/wav/dr_impl.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/wav/soloud_wav.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/wav/soloud_wavstream.cpp</itemPath>
+            <itemPath>../ThirdParty/soloud/src/audiosource/wav/stb_vorbis.c</itemPath>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="core" displayName="core" projectFiles="true">
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_bus.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_fader.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_fft.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_file.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_filter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_queue.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/core/soloud_thread.cpp</itemPath>
+        <logicalFolder name="f3" displayName="backend" projectFiles="true" kind="ROOT">
+          <logicalFolder name="f1" displayName="sdl" projectFiles="true" kind="ROOT">
+            <itemPath>../ThirdParty/soloud/src/backend/sdl2_static/soloud_sdl2_static.cpp</itemPath>
+          </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="filter" displayName="filter" projectFiles="true">
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp</itemPath>
-          <itemPath>../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp</itemPath>
+        <logicalFolder name="f1" displayName="core" projectFiles="true" kind="ROOT">
+          <itemPath>../ThirdParty/soloud/src/core/soloud.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_audiosource.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_bus.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_3d.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_basicops.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_faderops.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_filterops.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_getters.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_setters.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_voicegroup.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_core_voiceops.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_fader.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_fft.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_fft_lut.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_file.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_filter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_misc.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_queue.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/core/soloud_thread.cpp</itemPath>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f3" displayName="stb_truetype" projectFiles="true">
-        <itemPath>../../../Libraries/stb_truetype/stb_rect_pack.h</itemPath>
-        <itemPath>../../../Libraries/stb_truetype/stb_textedit.h</itemPath>
-        <itemPath>../../../Libraries/stb_truetype/stb_truetype.h</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f4" displayName="Tinyxml" projectFiles="true">
-        <itemPath>../../../Libraries/tinyxml2/tinyxml2.cpp</itemPath>
-        <itemPath>../../../Libraries/tinyxml2/tinyxml2.h</itemPath>
+        <logicalFolder name="f4" displayName="filter" projectFiles="true" kind="ROOT">
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_bassboostfilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_biquadresonantfilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_dcremovalfilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_echofilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_fftfilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_flangerfilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_freeverbfilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_lofifilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_robotizefilter.cpp</itemPath>
+          <itemPath>../ThirdParty/soloud/src/filter/soloud_waveshaperfilter.cpp</itemPath>
+        </logicalFolder>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -142,12 +137,11 @@
         <cTool>
           <incDir>
             <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
+            <pElem>/usr/include/glm</pElem>
+            <pElem>/usr/include/GL</pElem>
+            <pElem>/usr/include/stb</pElem>
+            <pElem>/usr/include/tinyxml2</pElem>
+            <pElem>../ThirdParty/soloud/include</pElem>
             <pElem>../Source</pElem>
           </incDir>
           <preprocessorList>
@@ -159,12 +153,11 @@
           <standard>11</standard>
           <incDir>
             <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
+            <pElem>/usr/include/glm</pElem>
+            <pElem>/usr/include/GL</pElem>
+            <pElem>/usr/include/stb</pElem>
+            <pElem>/usr/include/tinyxml2</pElem>
+            <pElem>../ThirdParty/soloud/include</pElem>
             <pElem>../Source</pElem>
           </incDir>
           <preprocessorList>
@@ -173,432 +166,287 @@
           </preprocessorList>
         </ccTool>
         <archiverTool>
-          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a</output>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a</output>
         </archiverTool>
       </compileType>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.cpp"
+      <item path="../Source/BaseUnits.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/BaseUnits.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Config.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Display.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Engine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Font.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Font.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/GUIElements.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/GUIElements.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Globals.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Globals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Gui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Gui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/IO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/IO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Input.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Logging.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Logging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/MemoryManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/MemoryManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Object.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/ParticleSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/ParticleSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Primitives.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Primitives.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/RNG.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/RNG.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/ResourceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/ResourceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Sound.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Sound.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/State.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/StateMachine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/StateMachine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/TooltipSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/TooltipSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ThirdParty/soloud/src/audiosource/sfxr/soloud_sfxr.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Config.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/darray.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Display.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/klatt.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Display.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Engine.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/resonator.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Engine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Font.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/soloud_speech.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Font.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/tts.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Globals.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/dr_impl.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Globals.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Gui.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/soloud_wav.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Gui.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/IO.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/soloud_wavstream.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/IO.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Object.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/State.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/stb_vorbis.c"
             ex="false"
             tool="0"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp"
+      <item path="../ThirdParty/soloud/src/backend/sdl2_static/soloud_sdl2_static.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_audiosource.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_bus.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_bus.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_3d.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_basicops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_faderops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_filterops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_getters.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_setters.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_voicegroup.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_voiceops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fader.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_fader.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_fft.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_fft_lut.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_file.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_file.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_filter.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_filter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_queue.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_misc.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_thread.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_queue.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_thread.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_bassboostfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_biquadresonantfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_dcremovalfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_echofilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_fftfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_flangerfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_freeverbfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_lofifilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/stb_truetype/stb_rect_pack.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_textedit.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_truetype.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_robotizefilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.h"
+      <item path="../ThirdParty/soloud/src/filter/soloud_waveshaperfilter.cpp"
             ex="false"
-            tool="3"
+            tool="1"
             flavor2="0">
       </item>
     </conf>
@@ -614,12 +462,11 @@
           <stripSymbols>true</stripSymbols>
           <incDir>
             <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
+            <pElem>/usr/include/glm</pElem>
+            <pElem>/usr/include/GL</pElem>
+            <pElem>/usr/include/stb</pElem>
+            <pElem>/usr/include/tinyxml2</pElem>
+            <pElem>../ThirdParty/soloud/include</pElem>
             <pElem>../Source</pElem>
           </incDir>
           <preprocessorList>
@@ -633,12 +480,11 @@
           <standard>11</standard>
           <incDir>
             <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
+            <pElem>/usr/include/glm</pElem>
+            <pElem>/usr/include/GL</pElem>
+            <pElem>/usr/include/stb</pElem>
+            <pElem>/usr/include/tinyxml2</pElem>
+            <pElem>../ThirdParty/soloud/include</pElem>
             <pElem>../Source</pElem>
           </incDir>
           <preprocessorList>
@@ -652,1385 +498,287 @@
           <developmentMode>5</developmentMode>
         </asmTool>
         <archiverTool>
-          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a</output>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/geist.a</output>
         </archiverTool>
       </compileType>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.cpp"
+      <item path="../Source/BaseUnits.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/BaseUnits.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Config.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Display.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Engine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Engine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Font.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Font.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/GUIElements.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/GUIElements.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Globals.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Globals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Gui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Gui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/IO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/IO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Input.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Logging.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Logging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/MemoryManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/MemoryManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Object.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/ParticleSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/ParticleSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Primitives.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Primitives.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/RNG.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/RNG.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/ResourceManager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/ResourceManager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/Sound.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/Sound.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/State.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/StateMachine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/StateMachine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../Source/TooltipSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../Source/TooltipSystem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ThirdParty/soloud/src/audiosource/sfxr/soloud_sfxr.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Config.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/darray.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Display.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/klatt.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Display.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Engine.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/resonator.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Engine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Font.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/soloud_speech.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Font.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/speech/tts.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Globals.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/dr_impl.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Globals.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Gui.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/soloud_wav.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/Gui.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/IO.cpp"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/soloud_wavstream.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/Framework/Source/IO.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Object.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/State.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c"
+      <item path="../ThirdParty/soloud/src/audiosource/wav/stb_vorbis.c"
             ex="false"
             tool="0"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp"
+      <item path="../ThirdParty/soloud/src/backend/sdl2_static/soloud_sdl2_static.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_audiosource.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_bus.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_bus.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_3d.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_basicops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_faderops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_filterops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_getters.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_setters.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_voicegroup.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_core_voiceops.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fader.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_fader.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_fft.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_fft_lut.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_file.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_file.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_filter.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_filter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_queue.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_misc.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_thread.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_queue.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp"
+      <item path="../ThirdParty/soloud/src/core/soloud_thread.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_bassboostfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_biquadresonantfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_dcremovalfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_echofilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_fftfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_flangerfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_freeverbfilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp"
+      <item path="../ThirdParty/soloud/src/filter/soloud_lofifilter.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/stb_truetype/stb_rect_pack.h"
+      <item path="../ThirdParty/soloud/src/filter/soloud_robotizefilter.cpp"
             ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_textedit.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_truetype.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-    </conf>
-    <conf name="Debug-Steam" type="3">
-      <toolsSet>
-        <compilerSet>default</compilerSet>
-        <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
-      </toolsSet>
-      <compileType>
-        <cTool>
-          <incDir>
-            <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
-            <pElem>../Source</pElem>
-          </incDir>
-          <preprocessorList>
-            <Elem>REQUIRES_STEAM</Elem>
-            <Elem>WITH_SDL2_STATIC</Elem>
-            <Elem>_DEBUG</Elem>
-          </preprocessorList>
-        </cTool>
-        <ccTool>
-          <architecture>2</architecture>
-          <standard>11</standard>
-          <incDir>
-            <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
-            <pElem>../Source</pElem>
-          </incDir>
-          <preprocessorList>
-            <Elem>REQUIRES_STEAM</Elem>
-            <Elem>WITH_SDL2_STATIC</Elem>
-            <Elem>_DEBUG</Elem>
-          </preprocessorList>
-        </ccTool>
-        <archiverTool>
-          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a</output>
-        </archiverTool>
-      </compileType>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Config.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Display.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Display.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Engine.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Engine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Font.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Font.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Globals.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Globals.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Gui.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Gui.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/IO.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/IO.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Object.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/State.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c"
-            ex="false"
-            tool="0"
-            flavor2="9">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_bus.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fader.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_file.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_filter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_queue.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_thread.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_rect_pack.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_textedit.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_truetype.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-    </conf>
-    <conf name="Release-Steam" type="3">
-      <toolsSet>
-        <compilerSet>default</compilerSet>
-        <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
-      </toolsSet>
-      <compileType>
-        <cTool>
-          <developmentMode>5</developmentMode>
-          <incDir>
-            <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
-            <pElem>../Source</pElem>
-          </incDir>
-          <preprocessorList>
-            <Elem>REQUIRES_STEAM</Elem>
-            <Elem>WITH_SDL2_STATIC</Elem>
-          </preprocessorList>
-        </cTool>
-        <ccTool>
-          <developmentMode>5</developmentMode>
-          <stripSymbols>true</stripSymbols>
-          <architecture>2</architecture>
-          <standard>11</standard>
-          <incDir>
-            <pElem>/usr/include/SDL2</pElem>
-            <pElem>../../glm</pElem>
-            <pElem>../../glew/include</pElem>
-            <pElem>../../stb_truetype</pElem>
-            <pElem>../../tinyxml2</pElem>
-            <pElem>../../steamworks/sdk/public/steam</pElem>
-            <pElem>../../SoLoud/include</pElem>
-            <pElem>../Source</pElem>
-          </incDir>
-          <preprocessorList>
-            <Elem>REQUIRES_STEAM</Elem>
-            <Elem>WITH_SDL2_STATIC</Elem>
-          </preprocessorList>
-        </ccTool>
-        <fortranCompilerTool>
-          <developmentMode>5</developmentMode>
-        </fortranCompilerTool>
-        <asmTool>
-          <developmentMode>5</developmentMode>
-        </asmTool>
-        <archiverTool>
-          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/framework.a</output>
-        </archiverTool>
-      </compileType>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/BaseUnits.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Config.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Config.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Display.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Display.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Engine.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Engine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Font.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Font.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/GUIElements.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Globals.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Globals.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Gui.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Gui.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/IO.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/IO.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Input.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Logging.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/MemoryManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Object.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ParticleSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Primitives.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/RNG.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/ResourceManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/Sound.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/State.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/StateMachine.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/SteamManager.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/Framework/Source/TooltipSystem.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/sfxr/soloud_sfxr.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/darray.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/klatt.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/resonator.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/soloud_speech.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/speech/tts.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/dr_impl.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wav.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/soloud_wavstream.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/audiosource/wav/stb_vorbis.c"
-            ex="false"
-            tool="0"
-            flavor2="9">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/backend/sdl2_static/soloud_sdl2_static.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_audiosource.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_bus.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_3d.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_basicops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_faderops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_filterops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_getters.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_setters.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voicegroup.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_core_voiceops.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fader.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_fft_lut.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_file.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_filter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_queue.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/core/soloud_thread.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_bassboostfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_biquadresonantfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_dcremovalfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_echofilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_fftfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_flangerfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_lofifilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_robotizefilter.cpp"
-            ex="false"
             tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/SoLoud/src/filter/soloud_waveshaperfilter.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_rect_pack.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/stb_truetype/stb_textedit.h"
-            ex="false"
-            tool="3"
             flavor2="0">
       </item>
-      <item path="../../../Libraries/stb_truetype/stb_truetype.h"
+      <item path="../ThirdParty/soloud/src/filter/soloud_waveshaperfilter.cpp"
             ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.cpp"
-            ex="false"
             tool="1"
-            flavor2="11">
-      </item>
-      <item path="../../../Libraries/tinyxml2/tinyxml2.h"
-            ex="false"
-            tool="3"
             flavor2="0">
       </item>
     </conf>
