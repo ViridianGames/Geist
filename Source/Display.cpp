@@ -96,9 +96,10 @@ void Display::InitializeVideoMode(int w, int h, bool fullscreen)
 
 
 	glMatrixMode(GL_MODELVIEW);
-	m_CamLookAt = Vec3(51, 13, 51);
-	m_CamPos = Vec3(1, 0, 1);
-	m_CamUp = Vec3(0, 1, 0);
+	m_CamLookAt = glm::vec3(51, 13, 51);
+	m_CamPos = glm::vec3(1, 0, 1);
+	m_CamUp = glm::vec3(0, 1, 0);
+	m_CamRotation = glm::mat4(1.0f);
 
 	m_3DModelView = glm::lookAt(m_CamPos, m_CamLookAt, m_CamUp);
 	glMultMatrixf(glm::value_ptr(m_3DModelView));
@@ -115,7 +116,7 @@ void Display::InitializeVideoMode(int w, int h, bool fullscreen)
 
 	m_CamDistance = cameraCloseLimit;
 
-	m_UnitDiagonal = Vec3(1, 1, 1);
+	m_UnitDiagonal = glm::vec3(1, 1, 1);
 	glm::normalize(m_UnitDiagonal);
 
 	m_CurrentBoundTexture = 727;
@@ -297,17 +298,17 @@ float Display::GetCameraAngle()
 	return m_CamAngle;
 }
 
-Vec3 Display::GetCameraPosition()
+glm::vec3 Display::GetCameraPosition()
 {
 	return m_CamPos;
 }
 
-Vec3 Display::GetCameraLookAtPoint()
+glm::vec3 Display::GetCameraLookAtPoint()
 {
 	return m_CamLookAt;
 }
 
-Mat4 Display::GetCameraRotationMatrix()
+glm::mat4 Display::GetCameraRotationMatrix()
 {
 	return m_CamRotation;
 }
@@ -389,14 +390,14 @@ void Display::SetCameraAngle(float newangle)
 	UpdateCamera();
 }
 
-void Display::SetCameraPosition(Vec3 newpos)
+void Display::SetCameraPosition(glm::vec3 newpos)
 {
 	m_CamLookAt = newpos;
 	m_CameraChanged = true;
 	UpdateCamera();
 }
 
-Vec3 Display::GetCameraDirection()
+glm::vec3 Display::GetCameraDirection()
 {
 	return m_CamDirection;
 }
@@ -413,20 +414,22 @@ void Display::SetIsFullscreen(bool isFS)
 
 void Display::UpdateCamera()
 {
-	Vec3 newpos = m_UnitDiagonal;
+	glm::vec3 newpos = m_UnitDiagonal;
 
 	newpos *= m_CamDistance;
+	glm::mat4 camrot = glm::mat4(1.0f);
+	camrot = glm::rotate(camrot, glm::radians(m_CamAngle), m_CamUp);
+	glm::vec4 camfinal = camrot * glm::vec4(newpos, 1);
+	camfinal += glm::vec4(m_CamLookAt, 1);
 
-	Mat4 camrot = glm::rotate(Mat4(), m_CamAngle, m_CamUp);
-	Vec4 camfinal = camrot * Vec4(newpos, 1);
-	camfinal += Vec4(m_CamLookAt, 1);
+	m_CamPos = glm::vec3(camfinal.x, camfinal.y, camfinal.z);
 
-	m_CamPos = Vec3(camfinal.x, camfinal.y, camfinal.z);
-
+	m_3DModelView = glm::mat4(1.0f);
 	m_3DModelView = glm::lookAt(m_CamPos, m_CamLookAt, m_CamUp);
 
-	m_CamDirection = glm::normalize(Vec3(m_CamPos.x, 0, m_CamPos.z) - Vec3(m_CamLookAt.x, 0, m_CamLookAt.z));
-	m_CamRotation = glm::rotate(Mat4(), m_CamAngle, m_CamUp);
+	m_CamDirection = glm::normalize(glm::vec3(m_CamPos.x, 0, m_CamPos.z) - glm::vec3(m_CamLookAt.x, 0, m_CamLookAt.z));
+	m_CamRotation = glm::mat4(1.0f);
+	m_CamRotation = glm::rotate(m_CamRotation, glm::radians(m_CamAngle), m_CamUp);
 	m_CameraChanged = false;
 }
 
@@ -457,7 +460,7 @@ void Display::DrawImage(Texture* texture, const float destx, const float desty, 
 	temp.m_Color = color;
 	temp.m_Image = texture;
 	temp.m_Type = DTYPE_IMAGE;
-	temp.m_Rotation = Vec3(0, 0, angle);
+	temp.m_Rotation = glm::vec3(0, 0, angle);
 	temp.m_Flag = flipped;
 	temp.m_BlendMode = blendmode;
 
@@ -481,7 +484,7 @@ void Display::DrawImage(Texture* texture, const float destx, const float desty, 
 	temp.m_Color = color;
 	temp.m_Image = texture;
 	temp.m_Type = DTYPE_IMAGE;
-	temp.m_Rotation = Vec3(0, 0, angle);
+	temp.m_Rotation = glm::vec3(0, 0, angle);
 	temp.m_Flag = flipped;
 	temp.m_BlendMode = blendmode;
 
@@ -505,7 +508,7 @@ void Display::DrawImage(Texture* texture, const float srcx, const float srcy, co
 	temp.m_Color = color;
 	temp.m_Image = texture;
 	temp.m_Type = DTYPE_IMAGE;
-	temp.m_Rotation = Vec3(0, 0, angle);
+	temp.m_Rotation = glm::vec3(0, 0, angle);
 	temp.m_Flag = flipped;
 	temp.m_BlendMode = blendmode;
 
@@ -529,7 +532,7 @@ void Display::DrawImage(Texture* texture, const float srcx, const float srcy, co
 	temp.m_Color = color;
 	temp.m_Image = texture;
 	temp.m_Type = DTYPE_IMAGE;
-	temp.m_Rotation = Vec3(0, 0, angle);
+	temp.m_Rotation = glm::vec3(0, 0, angle);
 	temp.m_Flag = flipped;
 	temp.m_BlendMode = blendmode;
 
@@ -554,7 +557,7 @@ void Display::DrawFontText(Texture* texture, const float srcx, const float srcy,
 	temp.m_Color = color;
 	temp.m_Image = texture;
 	temp.m_Type = DTYPE_TEXT;
-	temp.m_Rotation = Vec3(0, 0, angle);
+	temp.m_Rotation = glm::vec3(0, 0, angle);
 	temp.m_Flag = flipped;
 	temp.m_BlendMode = blendmode;
 
@@ -591,7 +594,7 @@ void Display::DrawLine(const int posx, const int posy, const int endx, const int
 
 }
 
-void Display::DrawMesh(Mesh* mesh, bool is3d, Vec3 pos, Texture* tex, const Color& color, Vec3 angle, Vec3 scale)
+void Display::DrawMesh(Mesh* mesh, bool is3d, glm::vec3 pos, Texture* tex, const Color& color, glm::vec3 angle, glm::vec3 scale)
 {
 	Drawable temp;
 	temp.m_Mesh = mesh;
@@ -619,12 +622,12 @@ void Display::DrawMesh(Mesh* mesh, bool is3d, Vec3 pos, Texture* tex, const Colo
 	m_SceneGraph.push_back(temp);
 }
 
-void Display::DrawMesh(Mesh* mesh, Vec3 pos, Texture* tex, const Color& color, Vec3 angle, Vec3 scale)
+void Display::DrawMesh(Mesh* mesh, glm::vec3 pos, Texture* tex, const Color& color, glm::vec3 angle, glm::vec3 scale)
 {
 	DrawMesh(mesh, true, pos, tex, color, angle, scale);
 }
 
-void Display::DrawMesh(Mesh* mesh, bool is3d, int tristart, int numtris, Vec3 pos, Texture* tex, const Color& color, Vec3 angle, Vec3 scale)
+void Display::DrawMesh(Mesh* mesh, bool is3d, int tristart, int numtris, glm::vec3 pos, Texture* tex, const Color& color, glm::vec3 angle, glm::vec3 scale)
 {
 	Drawable temp;
 	temp.m_Mesh = mesh;
@@ -641,7 +644,7 @@ void Display::DrawMesh(Mesh* mesh, bool is3d, int tristart, int numtris, Vec3 po
 	m_SceneGraph.push_back(temp);
 }
 
-void Display::DrawMesh(Mesh* mesh, int tristart, int numtris, Vec3 pos, Texture* tex, const Color& color, Vec3 angle, Vec3 scale)
+void Display::DrawMesh(Mesh* mesh, int tristart, int numtris, glm::vec3 pos, Texture* tex, const Color& color, glm::vec3 angle, glm::vec3 scale)
 {
 	DrawMesh(mesh, true, tristart, numtris, pos, tex, color, angle, scale);
 }
@@ -863,7 +866,7 @@ void Display::DrawPolygonActual(Texture* texture, const float srcX, const float 
 	m_LastMesh = NULL;
 }
 
-void Display::DrawMeshActual(Mesh* mesh, bool is3D, int tristart, int numtris, Vec3 pos, Texture* tex, Color color, Vec3 angle, Vec3 scale)
+void Display::DrawMeshActual(Mesh* mesh, bool is3D, int tristart, int numtris, glm::vec3 pos, Texture* tex, Color color, glm::vec3 angle, glm::vec3 scale)
 {
 	if (m_DrawMode != DM_3D)
 		Go3D();
@@ -1189,12 +1192,12 @@ void Display::ChangeToWindowed()
 	g_Engine->m_EngineConfig.Save();
 }
 
-Mat4 Display::GetProjectionMatrix()
+glm::mat4 Display::GetProjectionMatrix()
 {
 	return m_3DProj;
 }
 
-Mat4 Display::GetModelViewMatrix()
+glm::mat4 Display::GetModelViewMatrix()
 {
 	return m_3DModelView;
 }

@@ -63,10 +63,10 @@ public:
 
 	virtual bool GetIsDead() { return m_IsDead; }
 	virtual void SetIsDead(bool dead) { m_IsDead = dead; }
-	virtual Vec3 GetPos() { return m_Pos; }
-	virtual void SetPos(Vec3 newpos) { m_Pos = newpos; }
+	virtual glm::vec3 GetPos() { return m_Pos; }
+	virtual void SetPos(glm::vec3 newpos) { m_Pos = newpos; }
 
-	Vec3 m_Pos;
+	glm::vec3 m_Pos;
 	bool m_IsDead = false;
 
 	Config m_UnitConfig;

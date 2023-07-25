@@ -77,11 +77,11 @@ public:
 		m_Image = NULL;
 		m_Tex1 = NULL;
 		m_Tex2 = NULL;
-		m_Matrix = Mat4();
+		m_Matrix = glm::mat4();
 		m_Color = Color(1, 1, 1, 1);
-		m_Position = Vec3(0, 0, 0);
-		m_Scaling = Vec3(1, 1, 1);
-		m_Rotation = Vec3(0, 0, 0);
+		m_Position = glm::vec3(0, 0, 0);
+		m_Scaling = glm::vec3(1, 1, 1);
+		m_Rotation = glm::vec3(0, 0, 0);
 		m_Style = 0;
 		m_Width = 0;
 		m_Flag = false;
@@ -95,15 +95,15 @@ public:
 	unsigned int m_BlendMode;
 	bool m_Flag;
 	Mesh* m_Mesh;
-	Mat4 m_Matrix;
+	glm::mat4 m_Matrix;
 	Texture* m_Image;
 	Texture* m_Tex1;
 	Texture* m_Tex2;
 	Color m_Color;
 
-	Vec3 m_Position;
-	Vec3 m_Rotation;
-	Vec3 m_Scaling;
+	glm::vec3 m_Position;
+	glm::vec3 m_Rotation;
+	glm::vec3 m_Scaling;
 
 	int m_Type;
 
@@ -130,22 +130,22 @@ private:
 
 	GLuint m_Framebuffer;
 
-	//   Mat4 m_2DMatrix;
-	//   Mat4 m_3DMatrix;
+	//   glm::mat4 m_2DMatrix;
+	//   glm::mat4 m_3DMatrix;
 
-	Vec3 m_CamPos;
-	Vec3 m_CamLookAt;
-	Vec3 m_CamUp;
-	Vec3 m_CamDirection;
+	glm::vec3 m_CamPos;
+	glm::vec3 m_CamLookAt;
+	glm::vec3 m_CamUp;
+	glm::vec3 m_CamDirection;
 
-	Vec3 m_UnitDiagonal;
+	glm::vec3 m_UnitDiagonal;
 	float m_CamAngle;
 	float m_CamDistance;
-	Mat4 m_CamRotation;
+	glm::mat4 m_CamRotation = glm::mat4(1.0f);
 	float m_fieldOfView;
 
-	Mat4 m_3DProj; //  3D projection matrix, stored to make picking easier.
-	Mat4 m_3DModelView; //  3D modelview matrix, stored to make picking easier.
+	glm::mat4 m_3DProj = glm::mat4(1.0f); //  3D projection matrix, stored to make picking easier.
+	glm::mat4 m_3DModelView = glm::mat4(1.0f); //  3D modelview matrix, stored to make picking easier.
 
 	bool m_CameraChanged;
 
@@ -184,10 +184,10 @@ public:
 	void DrawBox(const int posx, const int posy, const int width, const int height, const Color& color = Color(1.0f, 1.0f, 1.0f, 1.0f), const bool filled = false);
 	void DrawLine(const int posx, const int posy, const int endx, const int endy, const float width = 1, const Color& color = Color(1.0f, 1.0f, 1.0f, 1.0f));
 
-	void DrawMesh(Mesh* mesh, Vec3 pos = Vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), Vec3 angle = Vec3(0, 0, 0), Vec3 scale = Vec3(1, 1, 1));
-	void DrawMesh(Mesh* mesh, bool is3d, Vec3 pos = Vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), Vec3 angle = Vec3(0, 0, 0), Vec3 scale = Vec3(1, 1, 1));
-	void DrawMesh(Mesh* mesh, int tristart, int numtris, Vec3 pos = Vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), Vec3 angle = Vec3(0, 0, 0), Vec3 scale = Vec3(1, 1, 1));
-	void DrawMesh(Mesh* mesh, bool is3d, int tristart, int numtris, Vec3 pos = Vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), Vec3 angle = Vec3(0, 0, 0), Vec3 scale = Vec3(1, 1, 1));
+	void DrawMesh(Mesh* mesh, glm::vec3 pos = glm::vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), glm::vec3 angle = glm::vec3(0, 0, 0), glm::vec3 scale = glm::vec3(1, 1, 1));
+	void DrawMesh(Mesh* mesh, bool is3d, glm::vec3 pos = glm::vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), glm::vec3 angle = glm::vec3(0, 0, 0), glm::vec3 scale = glm::vec3(1, 1, 1));
+	void DrawMesh(Mesh* mesh, int tristart, int numtris, glm::vec3 pos = glm::vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), glm::vec3 angle = glm::vec3(0, 0, 0), glm::vec3 scale = glm::vec3(1, 1, 1));
+	void DrawMesh(Mesh* mesh, bool is3d, int tristart, int numtris, glm::vec3 pos = glm::vec3(0, 0, 0), Texture* tex = NULL, const Color& color = Color(1, 1, 1, 1), glm::vec3 angle = glm::vec3(0, 0, 0), glm::vec3 scale = glm::vec3(1, 1, 1));
 
 	//  The order here is texture, source coordinates, source width/height(clipping), destination coordinates, destination width/height(scaling), color.
 	//  All units are in pixels so all coordinate variables are ints.
@@ -222,7 +222,7 @@ public:
 	void DrawImageActual(Texture* texture, const float srcx, const float srcy, const float srcw, const float srch, const float destx, const float desty, const float destw, const float desth, const Color color, const bool flipped, const float angle, const unsigned int blendmode);
 	void DrawBoxActual(const int posx, const int posy, const int width, const int height, const Color color = Color(1.0f, 1.0f, 1.0f, 1.0f), const bool filled = false);
 	void DrawLineActual(const int posx, const int posy, const int endx, const int endy, const float width, const Color color = Color(1.0f, 1.0f, 1.0f, 1.0f));
-	void DrawMeshActual(Mesh* mesh, bool is3D, int tristart, int numtris, Vec3 pos, Texture* tex, Color color, Vec3 angle, Vec3 scale);
+	void DrawMeshActual(Mesh* mesh, bool is3D, int tristart, int numtris, glm::vec3 pos, Texture* tex, Color color, glm::vec3 angle, glm::vec3 scale);
 	void DrawPolygonActual(Texture* texture, const float srcX, const float srcY, const float srcWid, const float srcHei, const float x1, const float topY1, const float x2, const float topY2, const float bottomY, const Color& color = Color(1, 1, 1, 1));
 	void DrawPerfCounter(std::shared_ptr<Font>& m_Font, int loc = 0);
 
@@ -232,16 +232,16 @@ public:
 	float GetCameraAngle();
 	void SetCameraAngle(float newangle);
 
-	Vec3 GetCameraPosition();
-	void SetCameraPosition(Vec3 newpos);
+	glm::vec3 GetCameraPosition();
+	void SetCameraPosition(glm::vec3 newpos);
 
-	Mat4 GetProjectionMatrix();
-	Mat4 GetModelViewMatrix();
+	glm::mat4 GetProjectionMatrix();
+	glm::mat4 GetModelViewMatrix();
 
-	Mat4 GetCameraRotationMatrix();
+	glm::mat4 GetCameraRotationMatrix();
 
-	Vec3 GetCameraDirection();
-	Vec3 GetCameraLookAtPoint();
+	glm::vec3 GetCameraDirection();
+	glm::vec3 GetCameraLookAtPoint();
 
 	float GetFieldOfView() { return m_fieldOfView; }
 

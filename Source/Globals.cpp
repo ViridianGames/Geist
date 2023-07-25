@@ -13,35 +13,35 @@ unique_ptr<StateMachine>     g_StateMachine;
 unique_ptr<SteamManager>     g_SteamManager;
 #endif
 
-glm::vec3 Normalize(glm::vec3 in)
-{
-	return glm::normalize(in);
-}
-
-float Dot(glm::vec3 a, glm::vec3 b)
-{
-	return glm::dot(a, b);
-}
-
-glm::vec3 Cross(glm::vec3 a, glm::vec3 b)
-{
-	return glm::cross(a, b);
-}
-
-glm::mat4 Translate(glm::mat4 mat, glm::vec3 pos)
-{
-	return glm::translate(mat, pos);
-}
-
-glm::mat4 Rotate(glm::mat4 mat, float angle, glm::vec3 up)
-{
-	return glm::rotate(mat, angle, up);
-}
-
-glm::mat4 Scale(glm::mat4 mat, glm::vec3 scaler)
-{
-	return glm::scale(mat, scaler);
-}
+//glm::vec3 Normalize(glm::vec3 in)
+//{
+//	return glm::normalize(in);
+//}
+//
+//float Dot(glm::vec3 a, glm::vec3 b)
+//{
+//	return glm::dot(a, b);
+//}
+//
+//glm::vec3 Cross(glm::vec3 a, glm::vec3 b)
+//{
+//	return glm::cross(a, b);
+//}
+//
+//glm::mat4 Translate(glm::mat4 mat, glm::vec3 pos)
+//{
+//	return glm::translate(mat, pos);
+//}
+//
+//glm::mat4 Rotate(glm::mat4 mat, float angle, glm::vec3 up)
+//{
+//	return glm::rotate(mat, glm::radians(angle), up);
+//}
+//
+//glm::mat4 Scale(glm::mat4 mat, glm::vec3 scaler)
+//{
+//	return glm::scale(mat, scaler);
+//}
 
 //  These functions assume that the ray and the triangle are in the same space.
 

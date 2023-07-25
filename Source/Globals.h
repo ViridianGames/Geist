@@ -48,20 +48,20 @@ extern std::unique_ptr<SteamManager>     g_SteamManager;
 #endif
 
 //  GLM Wrappers
-Vec3 Normalize(Vec3 in);
-float Dot(Vec3 a, Vec3 b);
-Vec3 Cross(Vec3 a, Vec3 b);
-
-Mat4 Translate(Mat4 mat, Vec3 pos);
-Mat4 Rotate(Mat4 mat, float angle, Vec3 up);
-Mat4 Scale(Mat4 mat, Vec3 scaler);
+//glm::vec3 Normalize(glm::vec3 in);
+//float Dot(glm::vec3 a, glm::vec3 b);
+//glm::vec3 Cross(glm::vec3 a, glm::vec3 b);
+//
+//Mat4 Translate(Mat4 mat, glm::vec3 pos);
+//Mat4 Rotate(Mat4 mat, float angle, glm::vec3 up);
+//Mat4 Scale(Mat4 mat, glm::vec3 scaler);
 
 int intersect_triangle(double orig[3], double dir[3],
 	double vert0[3], double vert1[3], double vert2[3],
 	double* t, double* u, double* v);
 
-bool Pick(Vec3 _RayOrigin, Vec3 _RayDirection, Vec3 tri1, Vec3 tri2, Vec3 tri3, double& distance);
+bool Pick(glm::vec3 _RayOrigin, glm::vec3 _RayDirection, glm::vec3 tri1, glm::vec3 tri2, glm::vec3 tri3, double& distance);
 
-bool PickWithUV(Vec3 _RayOrigin, Vec3 _RayDirection, Vec3 tri1, Vec3 tri2, Vec3 tri3, double& distance, double& u, double& v);
+bool PickWithUV(glm::vec3 _RayOrigin, glm::vec3 _RayDirection, glm::vec3 tri1, glm::vec3 tri2, glm::vec3 tri3, double& distance, double& u, double& v);
 
 #endif

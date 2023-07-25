@@ -906,6 +906,9 @@ bool Mesh::IsIndexed()
 
 void Mesh::UpdateIndices(vector<unsigned int> indices)
 {
+	if(indices.size() == 0)
+		return;
+
 	if (!m_Indexed)
 	{
 		m_Indexed = true;
@@ -1004,32 +1007,32 @@ void Mesh::Load(const std::string meshname)
 	}
 }
 
-bool Mesh::SelectCheck(Vec3 position, float angle, Vec3 scaling)
+bool Mesh::SelectCheck(glm::vec3 position, float angle, glm::vec3 scaling)
 {
-	Vec3 ori, pos;
+	glm::vec3 ori, pos;
 	g_Input->GetMouseRay(ori, pos);
 
-	Vec4 rayOrigin = Vec4(ori, 1);
-	Vec4 rayDirection = Vec4(pos, 0);
+	glm::vec4 rayOrigin = glm::vec4(ori, 1);
+	glm::vec4 rayDirection = glm::vec4(pos, 0);
 
-	Mat4 translation = glm::translate(Mat4(), position);
-	Mat4 rotation = glm::rotate(translation, angle, Vec3(0, 1, 0));
-	Mat4 model = glm::scale(rotation, scaling);
+	glm::mat4 translation = glm::translate(glm::mat4(), position);
+	glm::mat4 rotation = glm::rotate(translation, angle, glm::vec3(0, 1, 0));
+	glm::mat4 model = glm::scale(rotation, scaling);
 
 	if (m_Indexed)
 	{
 		for (int i = 0; i < m_NumberOfIndices; i += 3)
 		{
-			Vec3 tri1 = Vec3(m_Vertices[m_Indices[i]].x, m_Vertices[m_Indices[i]].y, m_Vertices[m_Indices[i]].z);
-			Vec3 tri2 = Vec3(m_Vertices[m_Indices[i + 1]].x, m_Vertices[m_Indices[i + 1]].y, m_Vertices[m_Indices[i + 1]].z);
-			Vec3 tri3 = Vec3(m_Vertices[m_Indices[i + 2]].x, m_Vertices[m_Indices[i + 2]].y, m_Vertices[m_Indices[i + 2]].z);
+			glm::vec3 tri1 = glm::vec3(m_Vertices[m_Indices[i]].x, m_Vertices[m_Indices[i]].y, m_Vertices[m_Indices[i]].z);
+			glm::vec3 tri2 = glm::vec3(m_Vertices[m_Indices[i + 1]].x, m_Vertices[m_Indices[i + 1]].y, m_Vertices[m_Indices[i + 1]].z);
+			glm::vec3 tri3 = glm::vec3(m_Vertices[m_Indices[i + 2]].x, m_Vertices[m_Indices[i + 2]].y, m_Vertices[m_Indices[i + 2]].z);
 
-			tri1 = Vec3(model * Vec4(tri1, 1));
-			tri2 = Vec3(model * Vec4(tri2, 1));
-			tri3 = Vec3(model * Vec4(tri3, 1));
+			tri1 = glm::vec3(model * glm::vec4(tri1, 1));
+			tri2 = glm::vec3(model * glm::vec4(tri2, 1));
+			tri3 = glm::vec3(model * glm::vec4(tri3, 1));
 
 			double distance;
-			if (Pick(Vec3(rayOrigin), Vec3(rayDirection), tri1, tri2, tri3, distance))
+			if (Pick(glm::vec3(rayOrigin), glm::vec3(rayDirection), tri1, tri2, tri3, distance))
 				return true;
 		}
 
@@ -1038,16 +1041,16 @@ bool Mesh::SelectCheck(Vec3 position, float angle, Vec3 scaling)
 	{
 		for (int i = 0; i < m_NumberOfVertices; i += 3)
 		{
-			Vec3 tri1 = Vec3(m_Vertices[i].x, m_Vertices[i].y, m_Vertices[i].z);
-			Vec3 tri2 = Vec3(m_Vertices[i + 1].x, m_Vertices[i + 1].y, m_Vertices[i + 1].z);
-			Vec3 tri3 = Vec3(m_Vertices[i + 2].x, m_Vertices[i + 2].y, m_Vertices[i + 2].z);
+			glm::vec3 tri1 = glm::vec3(m_Vertices[i].x, m_Vertices[i].y, m_Vertices[i].z);
+			glm::vec3 tri2 = glm::vec3(m_Vertices[i + 1].x, m_Vertices[i + 1].y, m_Vertices[i + 1].z);
+			glm::vec3 tri3 = glm::vec3(m_Vertices[i + 2].x, m_Vertices[i + 2].y, m_Vertices[i + 2].z);
 
-			tri1 = Vec3(model * Vec4(tri1, 1));
-			tri2 = Vec3(model * Vec4(tri2, 1));
-			tri3 = Vec3(model * Vec4(tri3, 1));
+			tri1 = glm::vec3(model * glm::vec4(tri1, 1));
+			tri2 = glm::vec3(model * glm::vec4(tri2, 1));
+			tri3 = glm::vec3(model * glm::vec4(tri3, 1));
 
 			double distance;
-			if (Pick(Vec3(rayOrigin), Vec3(rayDirection), tri1, tri2, tri3, distance))
+			if (Pick(glm::vec3(rayOrigin), glm::vec3(rayDirection), tri1, tri2, tri3, distance))
 				return true;
 		}
 	}
@@ -1056,32 +1059,32 @@ bool Mesh::SelectCheck(Vec3 position, float angle, Vec3 scaling)
 
 }
 
-bool Mesh::SelectCheck(int tristart, int numtris, Vec3 position, float angle, Vec3 scaling)
+bool Mesh::SelectCheck(int tristart, int numtris, glm::vec3 position, float angle, glm::vec3 scaling)
 {
-	Vec3 ori, pos;
+	glm::vec3 ori, pos;
 	g_Input->GetMouseRay(ori, pos);
 
-	Vec4 rayOrigin = Vec4(ori, 1);
-	Vec4 rayDirection = Vec4(pos, 0);
+	glm::vec4 rayOrigin = glm::vec4(ori, 1);
+	glm::vec4 rayDirection = glm::vec4(pos, 0);
 
-	Mat4 translation = glm::translate(Mat4(), position);
-	Mat4 rotation = glm::rotate(translation, angle, Vec3(0, 1, 0));
-	Mat4 model = glm::scale(rotation, scaling);
+	glm::mat4 translation = glm::translate(glm::mat4(), position);
+	glm::mat4 rotation = glm::rotate(translation, angle, glm::vec3(0, 1, 0));
+	glm::mat4 model = glm::scale(rotation, scaling);
 
 	if (m_Indexed)
 	{
 		for (int i = tristart * 3; i < tristart * 3 + numtris * 3; i += 3)
 		{
-			Vec3 tri1 = Vec3(m_Vertices[m_Indices[i]].x, m_Vertices[m_Indices[i]].y, m_Vertices[m_Indices[i]].z);
-			Vec3 tri2 = Vec3(m_Vertices[m_Indices[i + 1]].x, m_Vertices[m_Indices[i + 1]].y, m_Vertices[m_Indices[i + 1]].z);
-			Vec3 tri3 = Vec3(m_Vertices[m_Indices[i + 2]].x, m_Vertices[m_Indices[i + 2]].y, m_Vertices[m_Indices[i + 2]].z);
+			glm::vec3 tri1 = glm::vec3(m_Vertices[m_Indices[i]].x, m_Vertices[m_Indices[i]].y, m_Vertices[m_Indices[i]].z);
+			glm::vec3 tri2 = glm::vec3(m_Vertices[m_Indices[i + 1]].x, m_Vertices[m_Indices[i + 1]].y, m_Vertices[m_Indices[i + 1]].z);
+			glm::vec3 tri3 = glm::vec3(m_Vertices[m_Indices[i + 2]].x, m_Vertices[m_Indices[i + 2]].y, m_Vertices[m_Indices[i + 2]].z);
 
-			tri1 = Vec3(model * Vec4(tri1, 1));
-			tri2 = Vec3(model * Vec4(tri2, 1));
-			tri3 = Vec3(model * Vec4(tri3, 1));
+			tri1 = glm::vec3(model * glm::vec4(tri1, 1));
+			tri2 = glm::vec3(model * glm::vec4(tri2, 1));
+			tri3 = glm::vec3(model * glm::vec4(tri3, 1));
 
 			double distance;
-			if (Pick(Vec3(rayOrigin), Vec3(rayDirection), tri1, tri2, tri3, distance))
+			if (Pick(glm::vec3(rayOrigin), glm::vec3(rayDirection), tri1, tri2, tri3, distance))
 				return true;
 		}
 
@@ -1090,16 +1093,16 @@ bool Mesh::SelectCheck(int tristart, int numtris, Vec3 position, float angle, Ve
 	{
 		for (int i = tristart * 3; i < tristart * 3 + numtris * 3; i += 3)
 		{
-			Vec3 tri1 = Vec3(m_Vertices[i].x, m_Vertices[i].y, m_Vertices[i].z);
-			Vec3 tri2 = Vec3(m_Vertices[i + 1].x, m_Vertices[i + 1].y, m_Vertices[i + 1].z);
-			Vec3 tri3 = Vec3(m_Vertices[i + 2].x, m_Vertices[i + 2].y, m_Vertices[i + 2].z);
+			glm::vec3 tri1 = glm::vec3(m_Vertices[i].x, m_Vertices[i].y, m_Vertices[i].z);
+			glm::vec3 tri2 = glm::vec3(m_Vertices[i + 1].x, m_Vertices[i + 1].y, m_Vertices[i + 1].z);
+			glm::vec3 tri3 = glm::vec3(m_Vertices[i + 2].x, m_Vertices[i + 2].y, m_Vertices[i + 2].z);
 
-			tri1 = Vec3(model * Vec4(tri1, 1));
-			tri2 = Vec3(model * Vec4(tri2, 1));
-			tri3 = Vec3(model * Vec4(tri3, 1));
+			tri1 = glm::vec3(model * glm::vec4(tri1, 1));
+			tri2 = glm::vec3(model * glm::vec4(tri2, 1));
+			tri3 = glm::vec3(model * glm::vec4(tri3, 1));
 
 			double distance;
-			if (Pick(Vec3(rayOrigin), Vec3(rayDirection), tri1, tri2, tri3, distance))
+			if (Pick(glm::vec3(rayOrigin), glm::vec3(rayDirection), tri1, tri2, tri3, distance))
 				return true;
 		}
 	}

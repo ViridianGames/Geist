@@ -20,13 +20,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-//  But we will go ahead and typedef these to our identifiers just in case
-//  we find a way to hide this in the future.
-//typedef glm::vec2 Point;
-typedef glm::vec3 Vec3;
-typedef glm::vec4 Vec4;
-typedef glm::mat4 Mat4;
-
 //  Define some basic values and tools...
 #define PI (3.141592654f)
 #define Deg2Rad(a) ((a)*PI/180)
@@ -231,12 +224,12 @@ public:
 {
 public:
    Vertex(){};
-   Vertex( glm::vec3 thispos, glm::vec3 thisnormal, Color thiscolor = Color(1.0f, 1.0f, 1.0f, 1.0f),
+   Vertex( glm::glm::vec3 thispos, glm::glm::vec3 thisnormal, Color thiscolor = Color(1.0f, 1.0f, 1.0f, 1.0f),
 	  float theu = 0, float thev = 0, float theu2 = 0, float thev2 = 0 )
    { pos = thispos; normal = thisnormal; color = thiscolor; u = theu; v = thev; u2 = theu2; v2 = thev2; }
 
-   glm::vec3 pos;
-   glm::vec3 normal;
+   glm::glm::vec3 pos;
+   glm::glm::vec3 normal;
    Color color;
    float u, v;
    float u2, v2;
@@ -447,8 +440,8 @@ public:
 	int GetNumberOfVertices();
 
 	//  This function assumes that the ray is in the same space as the raw model data.
-	bool SelectCheck(Vec3 position, float angle, Vec3 scaling);
-	bool SelectCheck(int tristart, int numtris, Vec3 position, float angle, Vec3 scaling);
+	bool SelectCheck(glm::vec3 position, float angle, glm::vec3 scaling);
+	bool SelectCheck(int tristart, int numtris, glm::vec3 position, float angle, glm::vec3 scaling);
 };
 
 class SpriteSheet
