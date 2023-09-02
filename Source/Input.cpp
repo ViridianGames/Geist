@@ -100,6 +100,7 @@ void Input::Update()
 {
 	m_WasControllerJustAdded = false;
 	m_WasControllerJustRemoved = false;
+	m_LastMouseZ = m_MouseZ;
 
 	//  Most of our input is done through direct access of the connected peripherals.
 	//  This is most compatible with our update-driven, rather than event-drive,
@@ -250,8 +251,6 @@ void Input::Update()
 				m_IsMiddleDragging = true;
 		}
 	}
-
-	m_LastMouseZ = m_MouseZ;
 
 	// Make the ray   
 	float projX;
