@@ -21,10 +21,7 @@
 #include "Object.h"
 #include "Config.h"
 #include "Primitives.h"
-
 #include <string>
-
-class Config;
 
 class Unit2D : public Object
 {
@@ -69,7 +66,7 @@ public:
 	glm::vec3 m_Pos;
 	bool m_IsDead = false;
 
-	Config m_UnitConfig;
+	Config* m_UnitConfig;
 };
 
 #endif

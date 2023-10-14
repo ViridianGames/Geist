@@ -17,6 +17,7 @@
 #include "soloud.h"
 #include "soloud_speech.h"
 #include "soloud_thread.h"
+#include "soloud_wav.h"
 
 class Sound : public Object
 {

@@ -1,8 +1,15 @@
+#include "ResourceManager.h"
 #include "Globals.h"
+#include "Primitives.h"
+#include "Config.h"
+#include "Logging.h"
+#include "soloud_wav.h"
+
 #include <fstream>
 #include <sstream>
 
 using namespace std;
+using namespace SoLoud;
 
 void ResourceManager::Init(const std::string& configfile)
 {
@@ -45,6 +52,14 @@ void ResourceManager::AddSound(const std::string& soundName)
 	Log("Loading sound " + soundName);
 	m_SoundList[soundName] = new SoLoud::Wav;
 	m_SoundList[soundName]->load(soundName.c_str());
+	Log("Load successful.");
+}
+
+void ResourceManager::AddConfig(const std::string& configName)
+{
+	Log("Loading config " + configName);
+	m_configList[configName] = std::make_unique<Config>();
+	m_configList[configName]->Load(configName);
 	Log("Load successful.");
 }
 
@@ -107,6 +122,22 @@ SoLoud::Wav* ResourceManager::GetSound(const std::string& soundName)
 		Log("Loading sound " + soundName + " on the fly!");
 		AddSound(soundName);
 		return m_SoundList[soundName];
+	}
+}
+
+Config* ResourceManager::GetConfig(const std::string& configName)
+{
+	map<std::string, unique_ptr<Config> >::iterator node;
+	node = m_configList.find(configName);
+	if (node != m_configList.end())
+	{
+		return (*node).second.get();
+	}
+	else
+	{
+		Log("Loading config " + configName + " on the fly!");
+		AddConfig(configName);
+		return m_configList[configName].get();
 	}
 }
 

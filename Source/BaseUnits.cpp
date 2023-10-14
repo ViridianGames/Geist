@@ -1,6 +1,8 @@
 #include <list>
 #include "Config.h"
 #include "BaseUnits.h"
+#include "Globals.h"
+#include "ResourceManager.h"
 
 
 using namespace std;
@@ -29,7 +31,7 @@ void Unit2D::Shutdown()
 //  Unit3D
 void Unit3D::Init(const string& configfile)
 {
-	m_UnitConfig.Load(configfile);
+	m_UnitConfig = g_ResourceManager->GetConfig(configfile);
 }
 
 void Unit3D::Update()

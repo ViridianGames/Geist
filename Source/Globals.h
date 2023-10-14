@@ -30,12 +30,6 @@
 #include <vector>
 #include <memory>
 
-#define SAFE_RELEASE(p) { if ( (p) ) { (p)->Release(); (p) = 0; } }
-#define SAFE_DELETE(p) { if ( (p) ) { delete (p); (p) = 0; } }
-#define SAFE_DELETE_ARRAY(p)  { if ( (p) ) { delete [] (p); (p) = 0; } }
-
-#define PI (3.141592654f)
-
 extern std::unique_ptr<Engine>           g_Engine;
 extern std::unique_ptr<ResourceManager>  g_ResourceManager;
 extern std::unique_ptr<MemoryManager>    g_MemoryManager;
@@ -46,15 +40,6 @@ extern std::unique_ptr<StateMachine>     g_StateMachine;
 #ifdef REQUIRES_STEAM
 extern std::unique_ptr<SteamManager>     g_SteamManager;
 #endif
-
-//  GLM Wrappers
-//glm::vec3 Normalize(glm::vec3 in);
-//float Dot(glm::vec3 a, glm::vec3 b);
-//glm::vec3 Cross(glm::vec3 a, glm::vec3 b);
-//
-//Mat4 Translate(Mat4 mat, glm::vec3 pos);
-//Mat4 Rotate(Mat4 mat, float angle, glm::vec3 up);
-//Mat4 Scale(Mat4 mat, glm::vec3 scaler);
 
 int intersect_triangle(double orig[3], double dir[3],
 	double vert0[3], double vert1[3], double vert2[3],

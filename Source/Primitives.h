@@ -431,6 +431,7 @@ public:
 	void UpdateIndices(std::vector<unsigned int> indices);
 
 	Vertex GetVertex(int offset);
+	void SetVertex(int offset, Vertex vertex) { m_Vertices[offset] = vertex; }
 
 	bool IsIndexed();
 	unsigned int GetVertexBufferID();
