@@ -916,10 +916,10 @@ void Display::DrawMeshActual(Mesh* mesh, bool is3D, int tristart, int numtris, g
 	m_3DModelView = glm::lookAt(m_CamPos, m_CamLookAt, m_CamUp);
 	glMultMatrixf(glm::value_ptr(m_3DModelView));
 	glTranslatef(pos.x, pos.y, pos.z);
-	glScalef(scale.x, scale.y, scale.z);
 	glRotatef(angle.x, 1, 0, 0);
 	glRotatef(angle.y, 0, 1, 0);
 	glRotatef(angle.z, 0, 0, 1);
+	glScalef(scale.x, scale.y, scale.z);
 
 	if (mesh->IsIndexed())
 	{
