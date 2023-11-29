@@ -550,7 +550,7 @@ void Texture::Create(int w, int h, bool mipmaps)
 {
 	m_Loaded = false;
 	m_IsMipMapped = mipmaps;
-	m_PixelData->resize(w * h * 4, 255);
+	m_PixelData->resize(w * h * 4, 0);
 
 	m_Filename = "";
 	GLuint texture;
@@ -601,15 +601,15 @@ void Texture::PutPixel(int x, int y, Color color)
 	if (m_PixelData == nullptr)
 		return;
 
+	if (x >= m_Width || y >= m_Height)
+	{
+		return;
+	}
+
 	if (4 * (y * m_Width + x) + 3 >= (int)m_PixelData->size())
 		return;
 
 	PutPixel(x, y, color.GetHex());
-
-	//   m_PixelData->data()[4 * (y * m_Width + x)] = char(color.r * 255);
-	//   m_PixelData->data()[4 * (y * m_Width + x) + 1] = char(color.g * 255);
-	//   m_PixelData->data()[4 * (y * m_Width + x) + 2] = char(color.b * 255);
-	//   m_PixelData->data()[4 * (y * m_Width + x) + 3] = char(color.a * 255);
 }
 
 Color Texture::GetPixel(int x, int y)
