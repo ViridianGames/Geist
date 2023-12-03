@@ -177,7 +177,7 @@ public:
 	int GetWidth() { return m_HRes; }
 	int GetHeight() { return m_VRes; }
 
-	void ClearScreen();
+	void ClearScreen(Color color = Color(0, 0, 0, 1));
 
 	//  These functions are called from outside the class.  They do not actually draw anything;
 	//  they create entries in the scene graph that will later be drawn in Display::Draw().

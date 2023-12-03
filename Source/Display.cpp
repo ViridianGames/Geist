@@ -287,9 +287,9 @@ std::vector<Point> Display::GetSupportedResolutions()
 	return displayModes;
 }
 
-void Display::ClearScreen()
+void Display::ClearScreen(Color color)
 {
-	glClearColor(0, 0, 0, 1);
+	glClearColor(color.r, color.g, color.b, color.a);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
