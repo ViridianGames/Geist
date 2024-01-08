@@ -614,6 +614,11 @@ void Texture::PutPixel(int x, int y, Color color)
 
 Color Texture::GetPixel(int x, int y)
 {
+	if (x < 0 || x >= m_Width || y < 0 || y >= m_Height)
+	{
+		return Color(0, 0, 0, 0);
+	}
+
 	Color final;
 	final.r = (unsigned char)m_PixelData->data()[4 * (y * m_Width + x)] / 255.f;
 	final.g = (unsigned char)m_PixelData->data()[4 * (y * m_Width + x) + 1] / 255.f;
@@ -626,6 +631,9 @@ Color Texture::GetPixel(int x, int y)
 void Texture::PutPixel(int x, int y, unsigned int color)
 {
 	if (m_PixelData == nullptr)
+		return;
+
+	if(x < 0 || y < 0 || x >= m_Width || y >= m_Height)
 		return;
 
 	if (4 * (y * m_Width + x) + 3 >= (int)m_PixelData->size())
@@ -945,6 +953,13 @@ void Mesh::UpdateIndices(vector<unsigned int> indices)
 void Mesh::UpdateVertices(int offset, vector<Vertex> vertices)
 {
 	//  Update vertices
+	if (offset == 0)
+	{
+		m_Vertices.clear();
+		m_Vertices.resize(vertices.size());
+		m_NumberOfVertices = int(vertices.size());
+	}
+
 	for (std::size_t i = 0; i < vertices.size(); ++i)
 	{
 		m_Vertices[offset + i] = vertices[i];

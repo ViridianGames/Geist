@@ -48,6 +48,7 @@ public:
 	//  The pointers that these functions hand out are for access ONLY.  Do not
 	//  delete them.  You didn't make these resources, you have no business
 	//  deleting them.
+	bool DoesFileExist(const std::string& filename);
 	Texture* GetTexture(const std::string& textureName, bool mipmaps = true);
 	Mesh* GetMesh(const std::string& meshname);
 	SoLoud::Wav* GetSound(const std::string& soundname);

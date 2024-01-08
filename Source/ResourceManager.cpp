@@ -29,8 +29,12 @@ void ResourceManager::Update()
 
 }
 
-//  Call this function to pre-load a texture without needing a pointer
-//  to it (yet).
+bool ResourceManager::DoesFileExist(const std::string& textureName)
+{
+	ifstream file(textureName.c_str());
+	return file.good();
+}
+
 void ResourceManager::AddTexture(const std::string& textureName, bool mipmaps)
 {
 	Log("Loading texture " + textureName);
