@@ -18,10 +18,11 @@
 #ifndef _BASEUNITS_H_
 #define _BASEUNITS_H_
 
-#include "Object.h"
-#include "Config.h"
-#include "Primitives.h"
 #include <string>
+#include "raylib.h"
+#include "Object.h"
+
+class Config;
 
 class Unit2D : public Object
 {
@@ -37,13 +38,15 @@ public:
 
 	bool GetIsDead() { return m_IsDead; }
 	void SetIsDead(bool dead) { m_IsDead = dead; }
-	Point GetPos() { return m_Pos; }
-	void SetPos(Point newpos) { m_Pos = newpos; }
+	void SetPos(Vector2 newPos) { m_Pos = newPos; }
+	Vector2 GetPos() { return m_Pos; }
 
-	Point m_Pos;
+protected:
+
+	Vector2 m_Pos;
 	bool m_IsDead = false;
 
-	Config m_UnitConfig;
+	Config* m_UnitConfig;
 };
 
 class Unit3D : public Object
@@ -58,12 +61,14 @@ public:
 	virtual void Update();
 	virtual void Draw();
 
-	virtual bool GetIsDead() { return m_IsDead; }
-	virtual void SetIsDead(bool dead) { m_IsDead = dead; }
-	virtual glm::vec3 GetPos() { return m_Pos; }
-	virtual void SetPos(glm::vec3 newpos) { m_Pos = newpos; }
+	bool GetIsDead() { return m_IsDead; }
+	void SetIsDead(bool dead) { m_IsDead = dead; }
+	Vector3 GetPos() { return m_Pos; }
+	void SetPos(Vector3 newpos) { m_Pos = newpos; }
 
-	glm::vec3 m_Pos;
+protected:
+
+	Vector3 m_Pos;
 	bool m_IsDead = false;
 
 	Config* m_UnitConfig;

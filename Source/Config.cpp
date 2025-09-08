@@ -1,11 +1,9 @@
-//  TODO - Write out config files in the same order they are read in, or as
-//  close as possible.
-
-#include "Config.h"
-#include "Logging.h"
 #include <string>
 #include <sstream>
 #include <fstream>
+
+#include "Config.h"
+#include "Logging.h"
 
 using namespace std;
 
@@ -17,8 +15,8 @@ bool Config::Load(string fileName)
 
    if (instream.fail())
    {
-      Log("Could not open " + fileName);
-      return false;
+       Log("Could not open" + fileName);
+       return false;
    }
 
    m_FileName = fileName;

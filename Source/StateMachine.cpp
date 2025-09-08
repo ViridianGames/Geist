@@ -1,4 +1,5 @@
-#include "Globals.h"
+#include "StateMachine.h"
+#include "Logging.h"
 
 using namespace std;
 
@@ -55,11 +56,13 @@ void StateMachine::Draw()
 {
 	//  We draw states in reverse order, so popups are drawn on top of the
 	//  states they are popped on top of.
+   
+   m_StateMap[get<0>(m_StateStack[0])]->Draw();
 
-	for (auto i = m_StateStack.rbegin(); i != m_StateStack.rend(); ++i)
-	{
-		m_StateMap[get<0>(*i)]->Draw();
-	}
+	//for (auto i = m_StateStack.rbegin(); i != m_StateStack.rend(); ++i)
+	//{
+//		m_StateMap[get<0>(*i)]->Draw();
+	//}
 }
 
 void StateMachine::RegisterState(int id, State* state, string name)
@@ -110,8 +113,13 @@ void StateMachine::MakeStateTransitionEX(int newstate)
 	m_StateMap[get<0>(m_StateStack[0])]->OnEnter();
 }
 
-void StateMachine::PushState(int newstate)
+void StateMachine::PushState(int newstate, bool allowmultiples)
 {
+	if(!allowmultiples && (get<0>(m_StateStack[0]) == newstate || (m_TransitionStack.size() > 0 && get<1>(m_TransitionStack[0]) == newstate)))
+	{
+		return;
+	}
+
 	m_TransitionStack.push_back(make_tuple(TT_PUSH, newstate));
 }
 

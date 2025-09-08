@@ -6,7 +6,7 @@ using namespace std;
 void Emitter2D::Init(const std::string& configfile)
 {
 	m_Started = false;
-	m_RNG.SeedRNG(g_Engine->GameTimeInMS());
+	m_RNG.SeedRNG(GetTime());
 }
 
 void Emitter2D::Shutdown()
@@ -26,9 +26,9 @@ void Emitter2D::Update()
 			Particle2D& temp = (*node);
 
 			temp.m_Angle += temp.m_AngularVelocity;
-			temp.m_Pos.X += temp.m_Speed.X * g_Engine->LastUpdateInSeconds();
-			temp.m_Pos.Y += temp.m_Speed.Y * g_Engine->LastUpdateInSeconds();
-			temp.m_Age += g_Engine->LastUpdateInMS();
+			temp.m_Pos.x += temp.m_Speed.x * GetFrameTime();
+			temp.m_Pos.y += temp.m_Speed.y * GetFrameTime();
+			temp.m_Age += GetFrameTime();
 
 			if (temp.m_Age > temp.m_MaxAge)
 			{
@@ -59,8 +59,8 @@ void Emitter2D::Draw()
 	{
 		Particle2D& temp = (*node);
 
-		float drawx = (m_Pos.X + temp.m_Pos.X - m_DrawOffset.X) * temp.m_Scale + (g_Display->GetWidth() / 2);
-		float drawy = (m_Pos.Y + temp.m_Pos.Y - m_DrawOffset.Y) * temp.m_Scale + (g_Display->GetHeight() / 2);
+		float drawx = (GetPos().x + temp.m_Pos.x - m_DrawOffset.x) * temp.m_Scale + (GetScreenWidth() / 2);
+		float drawy = (GetPos().y + temp.m_Pos.y - m_DrawOffset.y) * temp.m_Scale + (GetScreenHeight() / 2);
 
 		Color c;
 		float pct = 0;
@@ -73,7 +73,7 @@ void Emitter2D::Draw()
 		c.b = (temp.m_StartColor.b * (1.0f - pct) + temp.m_EndColor.b * pct) * m_ColorMask.b;
 		c.a = (temp.m_StartColor.a * (1.0f - pct) + temp.m_EndColor.a * pct) * m_ColorMask.a;
 
-		g_Display->DrawSpriteScaled(m_Sprites[temp.m_Sprite], drawx, drawy, temp.m_Scale, temp.m_Scale, c, false, temp.m_Angle);
+		m_Sprites[temp.m_Sprite]->DrawScaled( Rectangle{drawx, drawy, temp.m_Scale, temp.m_Scale}, Vector2{0, 0}, temp.m_Angle, c);
 	}
 }
 
@@ -82,7 +82,7 @@ void Emitter2D::AddSprite(shared_ptr<Sprite> sprite)
 	m_Sprites.push_back(sprite);
 }
 
-void Emitter2D::AddParticle(Point pos, Point vel, unsigned int maxage, Color startcolor,
+void Emitter2D::AddParticle(Vector2 pos, Vector2 vel, unsigned int maxage, Color startcolor,
 	Color endcolor, float rotation, float scale)
 {
 	Particle2D temp;
@@ -91,9 +91,9 @@ void Emitter2D::AddParticle(Point pos, Point vel, unsigned int maxage, Color sta
 	temp.m_Speed = vel;
 	temp.m_StartColor = startcolor;
 	temp.m_EndColor = endcolor;
-	temp.m_Birth = g_Engine->Time();
+	temp.m_Birth = GetTime();
 	temp.m_Age = temp.m_Birth;
-	temp.m_MaxAge = g_Engine->Time() + maxage;
+	temp.m_MaxAge = GetTime() + maxage;
 	temp.m_IsDead = false;
 	temp.m_Scale = scale;
 	temp.m_AngularVelocity = rotation;
@@ -108,8 +108,8 @@ void Emitter2D::AddParticle(Particle2D particle)
 	m_Particles.push_back(particle);
 }
 
-/*void Emitter3D::AddParticle(glm::vec3 pos, glm::vec3 vel, glm::vec3 acc,
-			 unsigned int maxage, Color startcolor, Color endcolor, float rotation, glm::vec3 scale )
+/*void Emitter3D::AddParticle(Vector3 pos, Vector3 vel, Vector3 acc,
+			 unsigned int maxage, Color startcolor, Color endcolor, float rotation, Vector3 scale )
 {
    Particle3D temp;
 
@@ -118,8 +118,8 @@ void Emitter2D::AddParticle(Particle2D particle)
    temp.m_ExternalForce = acc;
    temp.m_StartColor = startcolor;
    temp.m_EndColor = endcolor;
-   temp.m_Age = g_Engine->Time();
-   temp.m_MaxAge = g_Engine->Time() + maxage;
+   temp.m_Age = GetTime();
+   temp.m_MaxAge = GetTime() + maxage;
    temp.m_IsDead = false;
    temp.m_Scale = scale;
    temp.m_AngularVelocity = rotation;
@@ -173,18 +173,18 @@ void ParticleSystem::AddEmitter(shared_ptr<Emitter2D> emitter)
 
    for(node; node != m_Particles.end(); ++node)
    {
-	  if (g_Display->GetDrawMode() == DM_2D)
+	  if (GetDrawMode() == DM_2D)
 	  {
-		 g_Display->DrawImage(m_Texture,
+		 DrawImage(m_Texture,
 			0, 0,
-			m_Texture->GetWidth(), m_Texture->GetHeight(),
+			m_Texture->width, m_Texture->height,
 			(*node).m_Pos.x, (*node).m_Pos.y,
-			m_Texture->GetWidth() * (*node).m_Scale.x, m_Texture->GetHeight() * (*node).m_Scale.y,
+			m_Texture->width * (*node).m_Scale.x, m_Texture->height * (*node).m_Scale.y,
 			(*node).m_StartColor, false, (*node).m_Angle);
 	  }
 	  else
 	  {
-		 g_Display->DrawMesh(m_Mesh, (*node).m_Pos, m_Texture, (*node).m_StartColor, glm::vec3(0, g_Display->GetCameraAngle() + 45, (*node).m_Angle), (*node).m_Scale);
+		 DrawMesh(m_Mesh, (*node).m_Pos, m_Texture, (*node).m_StartColor, Vector3(0, GetCameraAngle() + 45, (*node).m_Angle), (*node).m_Scale);
 	  }
    }
 }*/

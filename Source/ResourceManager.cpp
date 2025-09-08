@@ -1,15 +1,14 @@
 #include "ResourceManager.h"
-#include "Globals.h"
-#include "Primitives.h"
 #include "Config.h"
 #include "Logging.h"
-#include "soloud_wav.h"
+#include "Globals.h"
+#include "raylib.h"
+#include "raymath.h"
 
 #include <fstream>
 #include <sstream>
 
 using namespace std;
-using namespace SoLoud;
 
 void ResourceManager::Init(const std::string& configfile)
 {
@@ -18,9 +17,22 @@ void ResourceManager::Init(const std::string& configfile)
 
 void ResourceManager::Shutdown()
 {
-	for (auto& node : m_SoundList)
+	map<std::string, unique_ptr<Texture> >::iterator node;
+	for (node = m_TextureList.begin(); node != m_TextureList.end(); ++node)
 	{
-		delete node.second;
+		UnloadTexture(*(*node).second);
+	}
+
+	map<std::string, unique_ptr<Wave> >::iterator node3;
+	for (node3 = m_SoundList.begin(); node3 != m_SoundList.end(); ++node3)
+	{
+		UnloadWave(*(*node3).second);
+	}
+
+	map<std::string, unique_ptr<Music> >::iterator node4;
+	for (node4 = m_MusicList.begin(); node4 != m_MusicList.end(); ++node3)
+	{
+		UnloadMusicStream(*(*node4).second);
 	}
 }
 
@@ -29,33 +41,62 @@ void ResourceManager::Update()
 
 }
 
-bool ResourceManager::DoesFileExist(const std::string& textureName)
+bool ResourceManager::DoesFileExist(const std::string& fileName)
 {
-	ifstream file(textureName.c_str());
-	return file.good();
+	map<std::string, unique_ptr<Texture> >::iterator node;
+	node = m_TextureList.find(fileName);
+
+	if (node == m_TextureList.end())
+	{
+		ifstream file(fileName.c_str());
+		return file.good();
+	}
+	else
+	{
+		return true;
+	}
+}
+
+bool ResourceManager::DoesTextureExist(const std::string& textureName)
+{
+	map<std::string, unique_ptr<Texture> >::iterator node;
+	node = m_TextureList.find(textureName);
+
+	return (node != m_TextureList.end());
 }
 
 void ResourceManager::AddTexture(const std::string& textureName, bool mipmaps)
 {
 	Log("Loading texture " + textureName);
-	m_TextureList[textureName] = std::make_unique<Texture>();
-	m_TextureList[textureName]->Load(textureName, mipmaps);
+	m_TextureList[textureName] = std::make_unique<Texture>(LoadTexture(textureName.c_str()));
+	Log("Load successful.");	
+}
+
+void ResourceManager::AddTexture(Image& image, const std::string& textureName, bool mipmaps)
+{
+	Log("Loading texture " + textureName);
+	m_TextureList[textureName] = std::make_unique<Texture>(LoadTextureFromImage(image));
 	Log("Load successful.");
 }
 
-void ResourceManager::AddMesh(const std::string& meshName)
+void ResourceManager::AddModel(const std::string& modelName)
 {
-	Log("Loading mesh " + meshName);
-	m_MeshList[meshName] = std::make_unique<Mesh>();
-	m_MeshList[meshName]->Load(meshName);
+	Log("Loading model " + modelName);
+	m_ModelList[modelName] = std::make_unique<RaylibModel>(modelName);
 	Log("Load successful.");
 }
 
 void ResourceManager::AddSound(const std::string& soundName)
 {
 	Log("Loading sound " + soundName);
-	m_SoundList[soundName] = new SoLoud::Wav;
-	m_SoundList[soundName]->load(soundName.c_str());
+	m_SoundList[soundName] = std::make_unique<Wave>(LoadWave(soundName.c_str()));
+	Log("Load successful.");
+}
+
+void ResourceManager::AddMusic(const std::string& musicName)
+{
+	Log("Loading music " + musicName);
+	m_MusicList[musicName] = std::make_unique<Music>(LoadMusicStream(musicName.c_str()));
 	Log("Load successful.");
 }
 
@@ -84,48 +125,54 @@ Texture* ResourceManager::GetTexture(const std::string& Texturename, bool mipmap
 	}
 }
 
-void ResourceManager::ReloadTextures()
+RaylibModel* ResourceManager::GetModel(const std::string& modelName)
 {
-	map<string, unique_ptr<Texture>>::iterator node = m_TextureList.begin();
+	map<std::string, unique_ptr<RaylibModel> >::iterator node;
+	node = m_ModelList.find(modelName);
 
-	for (node; node != m_TextureList.end(); ++node)
-	{
-		if ((*node).second->WasLoaded())
-			(*node).second->Load((*node).first, (*node).second->IsMipMapped());
-	}
-}
-
-Mesh* ResourceManager::GetMesh(const std::string& meshName)
-{
-	map<std::string, unique_ptr<Mesh> >::iterator node;
-	node = m_MeshList.find(meshName);
-
-	if (node != m_MeshList.end())
+	if (node != m_ModelList.end())
 	{
 		return (*node).second.get();
 	}
 	else
 	{
-		Log("Loading mesh " + meshName + " on the fly!");
-		AddMesh(meshName);
-		return m_MeshList[meshName].get();
+		Log("Loading model " + modelName + " on the fly!");
+		AddModel(modelName);
+		return m_ModelList[modelName].get();
 	}
 }
 
-SoLoud::Wav* ResourceManager::GetSound(const std::string& soundName)
+Wave* ResourceManager::GetSound(const std::string& soundName)
 {
-	map<std::string, SoLoud::Wav* >::iterator node;
+	map<std::string, unique_ptr<Wave> >::iterator node;
 	node = m_SoundList.find(soundName);
 
 	if (node != m_SoundList.end())
 	{
-		return (*node).second;
+		return (*node).second.get();
 	}
 	else
 	{
 		Log("Loading sound " + soundName + " on the fly!");
 		AddSound(soundName);
-		return m_SoundList[soundName];
+		return m_SoundList[soundName].get();
+	}
+}
+
+Music* ResourceManager::GetMusic(const std::string& musicName)
+{
+	map<std::string, unique_ptr<Music> >::iterator node;
+	node = m_MusicList.find(musicName);
+
+	if (node != m_MusicList.end())
+	{
+		return (*node).second.get();
+	}
+	else
+	{
+		Log("Loading music " + musicName + " on the fly!");
+		AddMusic(musicName);
+		return m_MusicList[musicName].get();
 	}
 }
 
@@ -149,4 +196,9 @@ Config* ResourceManager::GetConfig(const std::string& configName)
 void ResourceManager::ClearTextures()
 {
 	m_TextureList.clear();
+}
+
+void ResourceManager::AddModel(RaylibModel&& model, const std::string& meshName)
+{
+	m_ModelList[meshName] = std::make_unique<RaylibModel>(std::move(model));
 }

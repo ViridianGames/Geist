@@ -1,16 +1,16 @@
+#include "raylib.h"
 #include <list>
-#include "Config.h"
-#include "BaseUnits.h"
 #include "Globals.h"
 #include "ResourceManager.h"
-
+#include "Config.h"
+#include "BaseUnits.h"
 
 using namespace std;
 
 //  Unit2D
 void Unit2D::Init(const string& configfile)
 {
-	m_UnitConfig.Load(configfile);
+	m_UnitConfig = g_ResourceManager->GetConfig(configfile);
 }
 
 void Unit2D::Update()
