@@ -2,8 +2,8 @@ CC = g++
 CFLAGS = -m64 -std=c++17
 DEBUG_FLAGS = -g -DDEBUG_MODE
 RELEASE_FLAGS = -O2 -DRELEASE_MODE
-INCLUDES = -I./Source/Geist -I./ThirdParty/raylib/include -I./ThirdParty/raylib/external -I./ThirdParty/lua/src
-LIBS = ./ThirdParty/raylib/lib/libraylib.a ./ThirdParty/lua/src/liblua.a -lGL -lm -lpthread
+INCLUDES = -I./Source -I./ThirdParty/raylib/build/raylib/include -I./ThirdParty/raylib/build/raylib/external -I./ThirdParty/lua/src
+LIBS = ./ThirdParty/raylib/build/raylib/libraylib.a ./ThirdParty/lua/src/liblua.a -lGL -lm -lpthread
 SOURCES = $(wildcard Source/*.cpp Source/Geist/*.cpp)
 DEBUG_OBJECTS = $(patsubst Source/%.cpp, Build/Debug/%.o, $(SOURCES))
 RELEASE_OBJECTS = $(patsubst Source/%.cpp, Build/Release/%.o, $(SOURCES))
@@ -12,7 +12,7 @@ RELEASE_DEPENDS = $(patsubst Source/%.cpp, Build/Release/%.d, $(SOURCES))
 DEBUG_TARGET = Redist/u7revisited_debug
 RELEASE_TARGET = Redist/u7revisited
 LUA_LIB = ThirdParty/lua/src/liblua.a
-RAYLIB_LIB = ThirdParty/raylib/lib/libraylib.a
+RAYLIB_LIB = ThirdParty/raylib/build/raylib/libraylib.a
 
 # Default target
 all: debug

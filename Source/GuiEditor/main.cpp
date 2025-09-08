@@ -1,78 +1,84 @@
-#include "Game.h"
-#include "Map.h"
-#include "Clan.h"
-#include "Render.h"
+///////////////////////////////////////////////////////////////////////////
+//
+// Name:     MAIN.CPP
+// Author:   Anthony Salter
+// Date:     2/03/05
+// Purpose:  Contains the entry point for the program.
+//
+///////////////////////////////////////////////////////////////////////////
 
-int main()
+#include "../Globals.h"
+#include "../Engine.h"
+#include "../ResourceManager.h"
+#include "../StateMachine.h"
+#include "../Primitives.h"
+#include "../Logging.h"
+#include "raylib.h"
+#include "GuiEditorEngine.h"
+#include "MainState.h"
+#include <string>
+#include <sstream>
+#include <memory>
+#include <filesystem>
+
+#include "rlgl.h"
+
+using namespace std;
+using namespace std::filesystem;
+
+int main(int argv, char** argc)
 {
-   InitWindow(FINAL_WIDTH, FINAL_HEIGHT, "ClanDestiny");
-   SetTargetFPS(60);
-
-   Font gameFont = LoadFontEx("Data/Fonts/softsquare.ttf", 9, nullptr, 0);
-   if (gameFont.texture.id == 0)
+   try
    {
-      TraceLog(LOG_ERROR, "Failed to load gameFont: Data/Fonts/softsquare.ttf");
-      CloseWindow();
-      return 1;
-   }
+      unique_ptr<GuiEditorEngine> m_Engine = make_unique<GuiEditorEngine>();
+      m_Engine->Init("Data/engine.cfg");
 
-   Font largeFont = LoadFontEx("Data/Fonts/softsquare.ttf", 18, nullptr, 0);
-   if (largeFont.texture.id == 0)
-   {
-      TraceLog(LOG_ERROR, "Failed to load largeFont: Data/Fonts/softsquare.ttf");
-      UnloadFont(gameFont);
-      CloseWindow();
-      return 1;
-   }
+      //  Pick a random initial location
+      int seed = (unsigned int)time(NULL);
 
-   RenderTexture2D target = LoadRenderTexture(BASE_WIDTH, BASE_HEIGHT);
-   Texture2D tileset = LoadTexture("Images/tiles.png");
-   std::vector<Clan> clans;
-   std::vector<SquareTile> map;
-   std::vector<Village> villages;
-   std::vector<Unit> units;
-   generateMap(map, villages, clans);
+      //  Initialize globals
+      m_Engine->m_Cursor = g_ResourceManager->GetTexture("Images/pointer.png");
 
-   int viewX = GRID_WIDTH / 2;
-   int viewY = GRID_HEIGHT / 2;
-   float waterAnimTime = 0.0f;
-   int waterFrame = 0;
+      m_Engine->m_DrawScale = g_Engine->m_ScreenHeight / g_Engine->m_RenderHeight;
 
-   while (!WindowShouldClose())
-   {
-      if (IsMouseButtonDown(MOUSE_LEFT_BUTTON))
+      float baseFontSize = 9;
+      const char* fontPath = "Data/Fonts/softsquare.ttf";
+      //const char* fontPath = "Data/Fonts/babyblocks.ttf";
+
+      const char* guiFontPath = "Data/Fonts/babyblocks.ttf"; float guiFontSize = 8;
+      m_Engine->m_font = LoadFontEx(guiFontPath, guiFontSize, NULL, 0);
+      m_Engine->m_fontSize = baseFontSize * int(m_Engine->g_DrawScale);
+
+
+      Font guiFont = LoadFontEx(guiFontPath, guiFontSize, NULL, 0);
+      shared_ptr<Font> g_guiFont = make_shared<Font>(guiFont);
+
+
+      m_Engine->m_renderTarget = LoadRenderTexture(m_Engine->m_RenderWidth, m_Engine->m_RenderHeight);
+      SetTextureFilter(m_Engine->m_renderTarget.texture, RL_TEXTURE_FILTER_ANISOTROPIC_4X);
+
+      //  Initialize states
+      Log("Initializing states.");
+
+      State* _mainState = new MainState;
+      _mainState->Init("engine.cfg");
+      g_StateMachine->RegisterState(0, _mainState, "MAIN_STATE");
+
+      g_StateMachine->MakeStateTransition(0);
+
+      Log("Starting main loop.");
+      while (!m_Engine->m_Done)
       {
-         Vector2 mousePos = GetMousePosition();
-         float renderMouseX = mousePos.x / SCALE_FACTOR;
-         float renderMouseY = mousePos.y / SCALE_FACTOR;
-         int mx = static_cast<int>((renderMouseX - MINIMAP_OFFSET_X) / MINIMAP_CELL_SIZE);
-         int my = static_cast<int>((renderMouseY - MINIMAP_OFFSET_Y) / MINIMAP_CELL_SIZE);
-         if (mx >= 0 && mx < GRID_WIDTH && my >= 0 && my < GRID_HEIGHT)
-         {
-            viewX = mx;
-            viewY = my;
-            if (viewX < VIEW_TILES_X / 2) viewX = VIEW_TILES_X / 2;
-            if (viewX > GRID_WIDTH - VIEW_TILES_X / 2 - 1) viewX = GRID_WIDTH - VIEW_TILES_X / 2 - 1;
-            if (viewY < VIEW_TILES_Y / 2) viewY = VIEW_TILES_Y / 2;
-            if (viewY > GRID_HEIGHT - VIEW_TILES_Y / 2 - 1) viewY = GRID_HEIGHT - VIEW_TILES_Y / 2 - 1;
-         }
+         m_Engine->Update();
+         m_Engine->Draw();
       }
-
-      drawView(target, map, tileset, viewX, viewY, waterAnimTime, waterFrame, clans, villages, gameFont, largeFont);
-
-      BeginDrawing();
-      ClearBackground(BLACK);
-      DrawTexturePro(target.texture,
-         { 0, 0, (float)BASE_WIDTH, (float)-BASE_HEIGHT },
-         { 0, 0, (float)FINAL_WIDTH, (float)FINAL_HEIGHT },
-         { 0, 0 }, 0.0f, WHITE);
-      EndDrawing();
    }
 
-   UnloadFont(largeFont);
-   UnloadFont(gameFont);
-   UnloadTexture(tileset);
-   UnloadRenderTexture(target);
-   CloseWindow();
+   catch (string errorCode)
+   {
+      Log(errorCode);
+      exit(0);
+   }
+
    return 0;
 }
