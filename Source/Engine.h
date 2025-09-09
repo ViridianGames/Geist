@@ -13,8 +13,6 @@
 #ifndef _ENGINE_H_
 #define _ENGINE_H_
 
-#include <unordered_map>
-
 #include "Object.h"
 #include "Config.h"
 
