@@ -145,7 +145,7 @@ void GuiTextButton::Draw()
 
 		DrawRectangleRoundedLines(Rectangle{ m_Gui->m_Pos.x + int(m_Pos.x), m_Gui->m_Pos.y + int(m_Pos.y),
 			m_Width, m_Height },
-			.05f, 5, m_BackgroundColor);
+			100, .05f, m_BackgroundColor);
 
 		DrawStringCentered(m_Font, m_Font->baseSize, m_String,
 			Vector2 {m_Gui->m_Pos.x + int(m_Pos.x) + (m_Width / 2), m_Gui->m_Pos.y + int(m_Pos.y + (m_Height * .6f))},
