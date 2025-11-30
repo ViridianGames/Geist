@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <memory>
+#include <iomanip>
 
 #include <geist/Gui.h>
 #include <geist/GuiElements.h>
@@ -606,6 +607,45 @@ void GuiTextInput::Update()
 
 	int adjustedx = int(m_Gui->m_Pos.x + m_Pos.x);
 	int adjustedy = int(m_Gui->m_Pos.y + m_Pos.y);
+
+	// Format back with 1 decimal, fixed
+
+	float val = 0.0f;
+	bool isNumber = false;
+
+	if (!m_String.empty() && m_String.back() != '.')
+	{
+		try
+		{
+			val = std::stof(m_String);
+			isNumber = true;
+		}
+		catch (const std::invalid_argument&)
+		{
+			isNumber = false;
+		}
+		catch (const std::out_of_range&)
+		{
+			isNumber = false;
+		}
+
+		if (isNumber)
+		{
+			if (int(val) == val)
+			{
+				// If whole number, format without decimal
+				m_String = std::to_string(int(val));
+			}
+			else
+			{
+				// If fractional, round to 1 decimal
+				val = std::round(val * 10.0f) / 10.0f;
+				std::ostringstream oss;
+				oss << std::fixed << std::setprecision(1) << val;
+				m_String = oss.str();
+			}
+		}
+	}
 
 	if (m_HasFocus && m_Gui->m_LastElement != m_ID)
 	{
