@@ -1,0 +1,15 @@
+ Fri May 22 15:56:50 2026.529 Starting Engine::Init()
+ Fri May 22 15:56:50 2026.529 Starting StateMachine::Init
+ Fri May 22 15:56:50 2026.529 Leaving StateMachine::Init
+ Fri May 22 15:56:50 2026.529 Starting InputSystem::Init()
+ Fri May 22 15:56:50 2026.529 Done With InputSystem::Init()
+ Fri May 22 15:56:50 2026.588 Done with Engine::Init()
+ Fri May 22 15:56:50 2026.589 Loading font Redist/Fonts/softsquare.ttf on the fly!
+ Fri May 22 15:56:50 2026.589 Loading font Redist/Fonts/softsquare.ttf
+ Fri May 22 15:56:50 2026.603 Load successful.
+ Fri May 22 15:56:50 2026.603 Loading texture Redist/Images/pointer.png on the fly!
+ Fri May 22 15:56:50 2026.603 Loading texture Redist/Images/pointer.png
+ Fri May 22 15:56:50 2026.604 Texture ID: 5, Width: 14, Height: 11
+ Fri May 22 15:56:50 2026.604 Load successful.
+ Fri May 22 15:56:50 2026.604 Created state MapScreenState with ID 1
+ Fri May 22 15:56:50 2026.604 StateMachine: Transitioning to state MapScreenState, ID 1

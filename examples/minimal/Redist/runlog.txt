@@ -1,0 +1,13 @@
+ Tue Jun 16 12:25:23 2026.570 Starting Engine::Init()
+ Tue Jun 16 12:25:23 2026.570 Starting StateMachine::Init
+ Tue Jun 16 12:25:23 2026.570 Leaving StateMachine::Init
+ Tue Jun 16 12:25:23 2026.570 Starting InputSystem::Init()
+ Tue Jun 16 12:25:23 2026.570 Done With InputSystem::Init()
+ Tue Jun 16 12:25:23 2026.722 Done with Engine::Init()
+ Tue Jun 16 12:25:23 2026.722 Created state TitleState with ID 0
+ Tue Jun 16 12:25:23 2026.722 Created state SetupGameState with ID 5
+ Tue Jun 16 12:25:23 2026.722 Created state CastleDesignState with ID 4
+ Tue Jun 16 12:25:23 2026.722 Created state MainState with ID 1
+ Tue Jun 16 12:25:23 2026.722 Created state CombatState with ID 3
+ Tue Jun 16 12:25:23 2026.722 Created state OptionsState with ID 2
+ Tue Jun 16 12:25:23 2026.722 StateMachine: Transitioning to state TitleState, ID 0

@@ -33,7 +33,7 @@ if(EXISTS ${LUA_LIB_PATH_DEBUG} AND EXISTS ${LUA_LIB_PATH_RELEASE})
         IMPORTED_LOCATION "${LUA_LIB_PATH_RELEASE}"
         IMPORTED_LOCATION_DEBUG "${LUA_LIB_PATH_DEBUG}"
         IMPORTED_LOCATION_RELEASE "${LUA_LIB_PATH_RELEASE}"
-        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/lua/src"
+        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/lua/Source"
     )
     add_library(Geist::lua ALIAS lua)
     set(LUA_PREBUILT TRUE)
@@ -103,10 +103,10 @@ add_library(Geist::json ALIAS nlohmann_json)
 # ============================================================================
 file(GLOB GEIST_SOURCES
     "src/*.cpp"
-    "tools/ghost/src/GhostSerializer.cpp"
-    "tools/ghost/src/GhostWindow.cpp"
-    "tools/ghost/src/GhostState.cpp"
-    "tools/ghost/src/GhostResourceLoader.cpp"
+    "tools/ghost/Source/GhostSerializer.cpp"
+    "tools/ghost/Source/GhostWindow.cpp"
+    "tools/ghost/Source/GhostState.cpp"
+    "tools/ghost/Source/GhostResourceLoader.cpp"
 )
 
 file(GLOB GEIST_HEADERS
@@ -118,13 +118,13 @@ add_library(geist STATIC ${GEIST_SOURCES} ${GEIST_HEADERS})
 target_include_directories(geist PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/raylib/include>
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/lua/src>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty/lua/Source>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ThirdParty>
 )
 
 # Private include for ghost tool source files that haven't been moved yet
 target_include_directories(geist PRIVATE
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/tools/ghost/src>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/tools/ghost/Source>
 )
 
 target_compile_features(geist PUBLIC cxx_std_17)
@@ -256,27 +256,27 @@ if(GEIST_BUILD_GHOST)
 
     if(WIN32)
         add_executable(ghost WIN32
-            tools/ghost/src/Main.cpp
-            tools/ghost/src/GhostResourceLoader.cpp
-            tools/ghost/src/ColorPickerState.cpp
-            tools/ghost/src/SpritePickerState.cpp
-            tools/ghost/src/FileChooserState.cpp
+            tools/ghost/Source/Main.cpp
+            tools/ghost/Source/GhostResourceLoader.cpp
+            tools/ghost/Source/ColorPickerState.cpp
+            tools/ghost/Source/SpritePickerState.cpp
+            tools/ghost/Source/FileChooserState.cpp
             tools/ghost/resources/ghost.rc
         )
     else()
         add_executable(ghost
-            tools/ghost/src/Main.cpp
-            tools/ghost/src/GhostResourceLoader.cpp
-            tools/ghost/src/ColorPickerState.cpp
-            tools/ghost/src/SpritePickerState.cpp
-            tools/ghost/src/FileChooserState.cpp
+            tools/ghost/Source/Main.cpp
+            tools/ghost/Source/GhostResourceLoader.cpp
+            tools/ghost/Source/ColorPickerState.cpp
+            tools/ghost/Source/SpritePickerState.cpp
+            tools/ghost/Source/FileChooserState.cpp
         )
     endif()
 
     target_include_directories(ghost PRIVATE
         ${CMAKE_CURRENT_BINARY_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${CMAKE_CURRENT_SOURCE_DIR}/tools/ghost/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/tools/ghost/Source
     )
 
     target_link_libraries(ghost PRIVATE geist)
