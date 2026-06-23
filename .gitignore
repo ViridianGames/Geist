@@ -73,3 +73,4 @@ ghostlog.txt
 *.swp
 *.tmp
 *~
+/ThirdParty/lua/src/liblua.a
