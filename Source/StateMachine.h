@@ -48,6 +48,7 @@ public:
 	int GetCurrentState() { return m_CurrentState; }
 	int GetPreviousState();// { return m_PreviousState; }
 	State* GetState(int identifier);
+	bool ShouldDrawCursor() const;
 
 private:
 	void MakeStateTransitionEX(int newstate);

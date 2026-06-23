@@ -1,7 +1,7 @@
 //  TODO - Write out config files in the same order they are read in, or as
 //  close as possible.
 
-#include <Geist/IO.h>
+#include <IO.h>
 #include <fstream>
 #include <sstream>
 

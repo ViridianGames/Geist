@@ -2,8 +2,8 @@
 #include <sstream>
 #include <fstream>
 
-#include <Geist/Config.h>
-#include <Geist/Logging.h>
+#include <Config.h>
+#include <Logging.h>
 
 using namespace std;
 

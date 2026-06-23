@@ -17,6 +17,7 @@
 #include <chrono>
 #include "Object.h"
 #include "Config.h"
+#include "raylib.h"
 
 class Engine : public Object
 {
@@ -43,6 +44,7 @@ public:
 	virtual void Draw();
 
 	void CaptureScreenshot();
+	float GetInputScale() const;
 
 	Config m_EngineConfig;
 	bool m_Done;
@@ -89,8 +91,19 @@ public:
 
 	double        m_averageUpdate;     //  The average duration of an update, used to detect lag.
 
+	bool          m_useVirtualResolution = false;  // Render to renderheight/renderwidth, then scale to screenwidth/screenheight
 
+	RenderTexture2D m_renderTarget;
 
+private:
+	void LoadMouseCursor();
+	void DrawMouseCursor(bool useRenderCoordinates);
+	void UnloadMouseCursor();
+
+	bool m_HasMouseCursor = false;
+	Texture2D m_MouseCursor{};
+	int m_MouseCursorHotspotX = 0;
+	int m_MouseCursorHotspotY = 0;
 };
 
 #endif

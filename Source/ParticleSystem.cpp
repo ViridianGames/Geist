@@ -1,6 +1,6 @@
-#include <Geist/ParticleSystem.h>
-#include <Geist/Globals.h>
-#include <Geist/Engine.h>
+#include <ParticleSystem.h>
+#include <Globals.h>
+#include <Engine.h>
 
 using namespace std;
 

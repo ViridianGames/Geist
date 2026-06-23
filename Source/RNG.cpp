@@ -1,4 +1,4 @@
-#include <Geist/RNG.h>
+#include <RNG.h>
 #include <stdlib.h>
 #include <time.h>
 

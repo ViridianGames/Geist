@@ -1,14 +1,16 @@
-#include <Geist/Globals.h>
-#include <Geist/Engine.h>
-#include <Geist/ResourceManager.h>
-#include <Geist/StateMachine.h>
-#include <Geist/ScriptingSystem.h>
-#include <Geist/SoundSystem.h>
-#include <Geist/InputSystem.h>
-#include <Geist/Logging.h>
+#include <Globals.h>
+#include <Engine.h>
+#include <ResourceManager.h>
+#include <StateMachine.h>
+#include <ScriptingSystem.h>
+#include <SoundSystem.h>
+#include <InputSystem.h>
+#include <Logging.h>
 #include <sstream>
 #include <fstream>
 #include <chrono>
+
+#include "rlgl.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -43,6 +45,8 @@ void Engine::Init(const std::string &configfile)
 	m_ScreenWidth = m_EngineConfig.GetNumber("h_res");
 	m_ScreenHeight = m_EngineConfig.GetNumber("v_res");
 
+	m_useVirtualResolution = m_EngineConfig.GetNumber("use_virtual_resolution") != 0;
+
 	//  Initialize Raylib and the screen.
 	std::string windowTitle = m_EngineConfig.GetString("name");
 	SetConfigFlags(FLAG_VSYNC_HINT);
@@ -61,11 +65,20 @@ void Engine::Init(const std::string &configfile)
 
 	HideCursor(); // We'll use our own.
 
+	m_renderTarget = LoadRenderTexture(static_cast<int>(m_RenderWidth), static_cast<int>(m_RenderHeight));
+	SetTextureFilter(m_renderTarget.texture, TEXTURE_FILTER_POINT);
+	LoadMouseCursor();
+
 	Log("Done with Engine::Init()");
 }
 
 void Engine::Shutdown()
 {
+	UnloadMouseCursor();
+	UnloadRenderTexture(m_renderTarget);
+
+	g_SoundSystem->Shutdown();
+	g_ScriptingSystem->Shutdown();
 	g_StateMachine->Shutdown();
 	g_ResourceManager->Shutdown();
 	g_InputSystem->Shutdown();
@@ -123,13 +136,101 @@ void Engine::Update()
 
 void Engine::Draw()
 {
-	BeginDrawing();
-	ClearBackground(BLACK);
-	g_ResourceManager->Draw();
-	g_StateMachine->Draw();
-	g_ScriptingSystem->Draw();
-	g_InputSystem->Draw();
-	EndDrawing();
+	if (m_useVirtualResolution)
+	{
+		BeginTextureMode(m_renderTarget);
+		ClearBackground(BLACK);
+		g_ResourceManager->Draw();
+		g_StateMachine->Draw();
+		g_ScriptingSystem->Draw();
+		g_InputSystem->Draw();
+		DrawMouseCursor(true);
+		EndTextureMode();
+
+		BeginDrawing();
+		ClearBackground(BLACK);
+		DrawTexturePro(m_renderTarget.texture,
+			{ 0, 0, m_RenderWidth, -m_RenderHeight },
+			{ 0, 0, m_ScreenWidth, m_ScreenHeight },
+			{ 0, 0 }, 0, WHITE);
+		EndDrawing();
+	}
+	else
+	{
+		BeginDrawing();
+		ClearBackground(BLACK);
+		g_ResourceManager->Draw();
+		g_StateMachine->Draw();
+		g_ScriptingSystem->Draw();
+		g_InputSystem->Draw();
+		DrawMouseCursor(false);
+		EndDrawing();
+	}
+}
+
+float Engine::GetInputScale() const
+{
+	if (!m_useVirtualResolution || m_RenderHeight <= 0.0f)
+	{
+		return 1.0f;
+	}
+
+	return m_ScreenHeight / m_RenderHeight;
+}
+
+void Engine::LoadMouseCursor()
+{
+	const std::string cursorPath = m_EngineConfig.GetString("mouse_cursor");
+	if (cursorPath.empty())
+	{
+		return;
+	}
+
+	m_MouseCursor = LoadTexture(cursorPath.c_str());
+	if (m_MouseCursor.id == 0)
+	{
+		Log("Engine: Failed to load mouse cursor texture: " + cursorPath);
+		return;
+	}
+
+	SetTextureFilter(m_MouseCursor, TEXTURE_FILTER_POINT);
+	m_HasMouseCursor = true;
+	m_MouseCursorHotspotX = static_cast<int>(m_EngineConfig.GetNumber("mouse_cursor_hotspot_x"));
+	m_MouseCursorHotspotY = static_cast<int>(m_EngineConfig.GetNumber("mouse_cursor_hotspot_y"));
+}
+
+void Engine::UnloadMouseCursor()
+{
+	if (!m_HasMouseCursor)
+	{
+		return;
+	}
+
+	UnloadTexture(m_MouseCursor);
+	m_MouseCursor = Texture2D{};
+	m_HasMouseCursor = false;
+}
+
+void Engine::DrawMouseCursor(bool useRenderCoordinates)
+{
+	if (!m_HasMouseCursor || !g_StateMachine->ShouldDrawCursor() || !IsCursorOnScreen())
+	{
+		return;
+	}
+
+	Vector2 mouse = GetMousePosition();
+	if (useRenderCoordinates)
+	{
+		const float inputScale = GetInputScale();
+		mouse.x /= inputScale;
+		mouse.y /= inputScale;
+	}
+
+	DrawTexture(
+		m_MouseCursor,
+		static_cast<int>(mouse.x) - m_MouseCursorHotspotX,
+		static_cast<int>(mouse.y) - m_MouseCursorHotspotY,
+		WHITE);
 }
 
 int64_t Engine::GameTimeInMS()

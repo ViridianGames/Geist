@@ -4,10 +4,10 @@
 #include <memory>
 #include <iomanip>
 
-#include <Geist/Gui.h>
-#include <Geist/GuiElements.h>
-#include <Geist/Globals.h>
-#include <Geist/Logging.h>
+#include <Gui.h>
+#include <GuiElements.h>
+#include <Globals.h>
+#include <Logging.h>
 
 #include "InputSystem.h"
 
@@ -111,7 +111,7 @@ void GuiTextButton::Draw()
 			0.5f, 1, m_BackgroundColor);
 
 		DrawRectangleRoundedLines(Rectangle{ m_Gui->m_Pos.x + int(m_Pos.x), m_Gui->m_Pos.y + int(m_Pos.y),	m_Width, m_Height },
-			0.5f,
+			//0.5f,
          5,
          1,
          m_BorderColor);
@@ -150,7 +150,9 @@ void GuiTextButton::Draw()
 
 		DrawRectangleRoundedLines(Rectangle{ m_Gui->m_Pos.x + int(m_Pos.x), m_Gui->m_Pos.y + int(m_Pos.y),
 			m_Width, m_Height },
-			100, .05f, .05f, m_BackgroundColor);
+			100, .05f,
+			//.05f,
+			m_BackgroundColor);
 
 		DrawStringCentered(m_Font, m_Font->baseSize, m_String,
 			Vector2 {m_Gui->m_Pos.x + int(m_Pos.x) + (m_Width / 2), m_Gui->m_Pos.y + int(m_Pos.y + (m_Height * .6f))},

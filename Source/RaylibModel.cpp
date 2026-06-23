@@ -1,4 +1,4 @@
-#include <Geist/RaylibModel.h>
+#include <RaylibModel.h>
 #include <cassert>
 #include <raymath.h>
 
@@ -88,14 +88,14 @@ void RaylibModel::UpdateAnim(const std::string& animName) {
 
 	// Look for the named animation in this model.
 	for (int i = 0; i < m_AnimCount; ++i) {
-		if (m_Anims[i].frameCount == 0) {
+		if (m_Anims[i].keyframeCount == 0) {
 			continue;
 		}
 
 		if (animName == m_Anims[i].name) {
 			animIdx = i;
 			// Standard movie animation, 24 frames per second.
-			currentFrame = static_cast<unsigned int>(GetTime() * 24.0f) % m_Anims[i].frameCount;
+			currentFrame = static_cast<unsigned int>(GetTime() * 24.0f) % m_Anims[i].keyframeCount;
 			break;
 		}
 	}
@@ -124,7 +124,7 @@ bool RaylibModel::SetAnimationFrame(const std::string& animName, int frame)
 		if (animName == m_Anims[i].name)
 		{
 			// Make sure it has the frame we want.
-			if (m_Anims[i].frameCount > frame)
+			if (m_Anims[i].keyframeCount > frame)
 			{
 				animValid = true;
 			}

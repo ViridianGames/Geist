@@ -3,10 +3,10 @@
 
 #include <raylib.h>
 #include <raymath.h>
-#include <Geist/Primitives.h>
-#include <Geist/IO.h>
-#include <Geist/Globals.h>
-#include <Geist/Engine.h>
+#include <Primitives.h>
+#include <IO.h>
+#include <Globals.h>
+#include <Engine.h>
 
 using namespace std;
 

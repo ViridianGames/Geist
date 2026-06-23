@@ -1,7 +1,7 @@
-#include <Geist/InputSystem.h>
-#include <Geist/Config.h>
-#include <Geist/Logging.h>
-#include <Geist/Globals.h>
+#include <InputSystem.h>
+#include <Config.h>
+#include <Logging.h>
+#include <Globals.h>
 
 using namespace std;
 

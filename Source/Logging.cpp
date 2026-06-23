@@ -1,4 +1,4 @@
-#include <Geist/Logging.h>
+#include <Logging.h>
 #include <memory>
 #include <fstream>
 #include <iomanip>

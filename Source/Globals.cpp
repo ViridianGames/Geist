@@ -1,13 +1,11 @@
-#include <Geist/Globals.h>
-#include <Geist/Engine.h>
-#include <Geist/ResourceManager.h>
-#include <Geist/StateMachine.h>
-#include <Geist/ScriptingSystem.h>
-#include <Geist/SoundSystem.h>
-#include <Geist/InputSystem.h>
-#include <Geist/Primitives.h>
-#include <Geist/Logging.h>
-#include <iostream>
+#include <Globals.h>
+#include <Engine.h>
+#include <ResourceManager.h>
+#include <StateMachine.h>
+#include <ScriptingSystem.h>
+#include <SoundSystem.h>
+#include <InputSystem.h>
+#include <Logging.h>
 
 using namespace std;
 

@@ -1,8 +1,8 @@
-#include <Geist/ScriptingSystem.h>
-#include <Geist/Config.h>
-#include <Geist/Logging.h>
-#include <Geist/Globals.h>
-#include <Geist/Engine.h>
+#include <ScriptingSystem.h>
+#include <Config.h>
+#include <Logging.h>
+#include <Globals.h>
+#include <Engine.h>
 
 #include <raylib.h>
 #include <raymath.h>
